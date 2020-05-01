@@ -1,32 +1,49 @@
-"category": {
-            "@id": "https://uri.fiware.org/ns/data-models#category",
-            "@type": "@vocab"
-        },
-        "controlledAsset": {
-            "@id": "https://uri.fiware.org/ns/data-models#controlledAsset",
-            "@type": "@id"
-        },
-        "controlledProperty": {
-            "@id": "https://uri.fiware.org/ns/data-models#controlledProperty",
-            "@type": "@vocab"
-        },
-        "ipAddress": "https://uri.fiware.org/ns/data-models#ipAddress",
-        "mcc": ""
-        "mnc": "https://uri.fiware.org/ns/data-models#mnc",
-        "batteryLevel": "https://uri.fiware.org/ns/data-models#batteryLevel",
-        "serialNumber": "https://uri.fiware.org/ns/data-models#serialNumber",
-        "refDeviceModel": {
-            "@id": "https://uri.fiware.org/ns/data-models#refDeviceModel",
-            "@type": "@id"
-        },
-        "rssi": "https://uri.fiware.org/ns/data-models#rssi",
-        "value": "https://uri.fiware.org/ns/data-models#value",
-        "deviceState": "https://uri.fiware.org/ns/data-models#deviceState",
-        "dateFirstUsed": {
-            "@id": "https://uri.fiware.org/ns/data-models#dateFirstUsed",
-            "@type": "https://uri.etsi.org/ngsi-ld/DateTime"
-        },
-        "owner": {
-            "@id": "https://uri.fiware.org/ns/data-models#owner",
-            "@type": "@id"
-        }
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld",
+  "title": "TErms included into the Smart Data Models",
+  "definitions": {
+    "category": {
+      "sensor": ""
+    },
+    "controlledAsset": {
+    "": ""
+    },
+    "controlledProperty": {
+      "": ""
+    },
+    "ipAddress": {
+      "": ""
+    },
+    "mcc": {
+      "": ""
+    },
+    "mnc": {
+      "": ""
+    },
+    "batteryLevel": {
+      "": ""
+    },
+    "serialNumber": {
+      "": ""
+    },
+    "refDeviceModel": {
+      "": ""
+    },
+    "rssi": {
+      "": ""
+    },
+    "value": {
+      "": ""
+    },
+    "deviceState": {
+      "": ""
+    },
+    "dateFirstUsed": {
+      "": ""
+    },
+    "owner": {
+      "": ""
+    }
+  }
+}
