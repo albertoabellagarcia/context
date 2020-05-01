@@ -1,5 +1,9 @@
 {
     "@context": {
+        "device": {
+        "@id": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/schema.jsonld",
+        "@type": "@id"
+        }
         "category": {
             "@id": "https://uri.fiware.org/ns/data-models#category",
             "@type": "@vocab"
