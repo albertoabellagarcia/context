@@ -16,20 +16,19 @@
       "$ref": "https://smart-data-models.github.io/dataModel.Device/device-schema.json#/definitions/Device-Commons"
     },
     {
-      "properties": {
+      "properties":
+      {
         "type": {
           "type": "string",
           "enum": ["Device"],
           "description": "NGSI Entity type"
         },
-        "controlledAsset": {
+        "controlledAsset":
+        {
           "type": "array",
-          "items": {
+          "items":
+          {
             "oneOf": [
-              {
-                "type": "string",
-                "format": "uri"
-              },
               {
                 "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
               }
@@ -38,12 +37,6 @@
         },
         "mnc": {
           "type": "string"
-        },
-        "macAddress": {
-          "type": "array",
-          "items": {
-            "$ref": "https://smart-data-models.github.io/dataModel.Device/device-schema.json#/definitions/MacAddressType"
-          }
         },
         "ipAddress": {
           "type": "array",
@@ -99,10 +92,6 @@
         "refDeviceModel": {
           "oneOf": [
             {
-              "type": "string",
-              "format": "uri"
-            },
-            {
               "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
             }
           ]
@@ -146,5 +135,5 @@
       }
     }
   ],
-  "required": ["id", "type", "category", "controlledProperty"]
+  "required": ["@id", "@type", "category", "controlledProperty"]
 }
