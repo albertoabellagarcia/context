@@ -75,8 +75,7 @@
           "type": "array",
           "items":
           {
-            "type": "string",
-            "enum": ["morbid1", "morbid2"]
+            "type": "string"
           }
         }
        },
