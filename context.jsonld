@@ -1,41 +1,39 @@
 {
     "@context": {
-        "device": {
-        "@id": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/schema.jsonld",
-        "@type": "@id"
-        }
+        "id": "@id",
+        "type": "@type",
+        "device": "https://github.com/smart-data-models/dataModel.Device/tree/master/Device",
         "category": {
-            "@id": "https://uri.fiware.org/ns/data-models#category",
+            "@id": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#category",
             "@type": "@vocab"
         },
         "controlledAsset": {
-            "@id": "https://uri.fiware.org/ns/data-models#controlledAsset",
+            "@id": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#controlledAsset",
             "@type": "@id"
         },
         "controlledProperty": {
-            "@id": "https://uri.fiware.org/ns/data-models#controlledProperty",
+            "@id": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#controlledProperty",
             "@type": "@vocab"
         },
-        "ipAddress": "https://uri.fiware.org/ns/data-models#ipAddress",
-        "mcc": ""
-        "mnc": "https://uri.fiware.org/ns/data-models#mnc",
-        "batteryLevel": "https://uri.fiware.org/ns/data-models#batteryLevel",
-        "serialNumber": "https://uri.fiware.org/ns/data-models#serialNumber",
+        "ipAddress": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#ipAddress",
+        "mnc": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#mnc",
+        "batteryLevel": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#batteryLevel",
+        "serialNumber": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#serialNumber",
         "refDeviceModel": {
-            "@id": "https://uri.fiware.org/ns/data-models#refDeviceModel",
+            "@id": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#refDeviceModel",
             "@type": "@id"
         },        
-        "rssi": "https://uri.fiware.org/ns/data-models#rssi",
-        "value": "https://uri.fiware.org/ns/data-models#value",
-        "deviceState": "https://uri.fiware.org/ns/data-models#deviceState",
+        "rssi": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#rssi",
+        "value": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#value",
+        "deviceState": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#deviceState",
         "dateFirstUsed": {
-            "@id": "https://uri.fiware.org/ns/data-models#dateFirstUsed",
+            "@id": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#dateFirstUsed",
             "@type": "https://uri.etsi.org/ngsi-ld/DateTime"
         },
         "owner": {
-            "@id": "https://uri.fiware.org/ns/data-models#owner",
+            "@id": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#owner",
             "@type": "@id"
         }
-   }
+   },
     "generatedAt": "2020-03-18T11:49:33+00:00"
 }

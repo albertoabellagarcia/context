@@ -1,0 +1,38 @@
+{
+  "@context " : "https://raw.githubusercontent.com/albertoabellagarcia/context/master/context.jsonld",
+  "@id": "urn:ngsi-ld:Device:device-9845A",
+  "@type": "coronaPatient",
+  "personid": {
+    "type": "person"
+  },
+  "dateInfection": "2020-02-11T10:30:23Z",
+  "methodDetermineInfection" : ["PCR"],
+  "locationInfection" : {
+    "geopoint" : "",
+    "address" : {
+      "streetAddress": "",
+      "addressLocality" : "",
+      "addressRegion" : "",
+      "addressCountry" : "",
+      "postalCode" : "",
+      "postOfficeBoxNumber" : "",
+      "areaServed": "",
+
+    }
+  },
+  "patientResolution" : "death",
+  "dateResolution" : "2020-03-12T10:30:23Z",
+  "locationResolution" : {
+    "geopoint" : "",
+    "address" : {
+      "streetAddress": "",
+      "addressLocality" : "",
+      "addressRegion" : "",
+      "addressCountry" : "",
+      "postalCode" : "",
+      "postOfficeBoxNumber" : "",
+      "areaServed": "",
+
+    }
+  }
+}

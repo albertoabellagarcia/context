@@ -1,49 +1,21 @@
 {
   "$schema": "http://json-schema.org/schema#",
   "$id": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld",
-  "title": "TErms included into the Smart Data Models",
+  "title": "Terms included into the Smart Data Models",
   "definitions": {
-    "category": {
-      "sensor": ""
-    },
-    "controlledAsset": {
-    "": ""
-    },
-    "controlledProperty": {
-      "": ""
-    },
-    "ipAddress": {
-      "": ""
-    },
-    "mcc": {
-      "": ""
-    },
-    "mnc": {
-      "": ""
-    },
-    "batteryLevel": {
-      "": ""
-    },
-    "serialNumber": {
-      "": ""
-    },
-    "refDeviceModel": {
-      "": ""
-    },
-    "rssi": {
-      "": ""
-    },
-    "value": {
-      "": ""
-    },
-    "deviceState": {
-      "": ""
-    },
-    "dateFirstUsed": {
-      "": ""
-    },
-    "owner": {
-      "": ""
-    }
+    "category": "Group of identifiers to classify some item",
+    "controlledAsset": "element to be controlled",
+    "controlledProperty": "Characteristic to be controlled of the element",
+    "ipAddress": "locator in internet, either under protocol ipv4 or ipv6",
+    "mcc": "",
+    "mnc": "",
+    "batteryLevel": "Level of charge of the electrical storage facility",
+    "serialNumber": "identification string",
+    "refDeviceModel": "link to the device model object",
+    "rssi": "",
+    "value": "Measured magnitude",
+    "deviceState": "Situation of the device",
+    "dateFirstUsed": "First day of using the device",
+    "owner": "Identificator of the entity or person owning the device"
   }
 }
