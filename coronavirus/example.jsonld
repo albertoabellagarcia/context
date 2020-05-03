@@ -1,38 +1,50 @@
 {
   "@context " : "https://raw.githubusercontent.com/albertoabellagarcia/context/master/context.jsonld",
-  "@id": "urn:ngsi-ld:Device:device-9845A",
+  "@id": "urn:ngsi-ld:patient-IT-00009845A",
   "@type": "coronaPatient",
-  "personid": {
-    "type": "person"
-  },
+  "personId": "patient-IT-00009845A",
+  "age" : 52,
+  "sex" : "male",
   "dateInfection": "2020-02-11T10:30:23Z",
   "methodDetermineInfection" : ["PCR"],
   "locationInfection" : {
-    "geopoint" : "",
+    "geopoint" :
+    {
+    "type": "Point",
+    "coordinates": [40.4137436, -3.6962258]
+    },
     "address" : {
-      "streetAddress": "",
-      "addressLocality" : "",
-      "addressRegion" : "",
-      "addressCountry" : "",
-      "postalCode" : "",
+      "streetAddress": "Paseo del prado 18",
+      "addressLocality" : "Madrid",
+      "addressRegion" : "Madrid",
+      "addressCountry" : "Spain",
+      "postalCode" : "28014",
       "postOfficeBoxNumber" : "",
-      "areaServed": "",
-
+      "areaServed": ""
     }
   },
   "patientResolution" : "death",
   "dateResolution" : "2020-03-12T10:30:23Z",
   "locationResolution" : {
-    "geopoint" : "",
+    "geopoint" : {
+    "type": "Point",
+    "coordinates": [40.4811674, -3.6895864]
+    },
     "address" : {
-      "streetAddress": "",
-      "addressLocality" : "",
-      "addressRegion" : "",
-      "addressCountry" : "",
-      "postalCode" : "",
+      "streetAddress": "Paseo de la Castellana 261",
+      "addressLocality" : "Madrid",
+      "addressRegion" : "Madrid",
+      "addressCountry" : "Spain",
+      "postalCode" : "28046",
       "postOfficeBoxNumber" : "",
-      "areaServed": "",
+      "areaServed": ""
 
-    }
+    },
+    "treatments" : {
+      "dateTreatment" : "2020-03-7T10:30:23Z",
+      "descriptionTreatment": "Fever control with 1gr dose of Nolotil",
+      "dateEndTreatment" : "2020-03-12T10:30:23Z"
+    },
+    "coMoribidities": ["morbid1"]
   }
 }
