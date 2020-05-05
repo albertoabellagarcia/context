@@ -51,9 +51,6 @@
             ]
           }
         },
-        "configuration": {
-          "type": "object"
-        },
         "dateInstalled": {
           "type": "string",
           "format": "date-time"

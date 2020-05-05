@@ -2,31 +2,19 @@
     "@context": {
         "id": "@id",
         "type": "@type",
-        "addressLocality": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#addressLocality",
-        "addressRegion": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#addressRegion",
-        "addressCountry": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#addressCountry",
+        "addressLocality": "locality",
+        "addressRegion": "stateOrProvince",
+        "addressCountry": "country",
         "alternateName": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#alternateName",
         "batteryLevel": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#batteryLevel",
-        "category": {
-            "@id": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#category",
-            "@type": "@vocab"
-        },
+        "category":  "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#category",
         "city": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#city",
-        "controlledAsset": {
-            "@id": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#controlledAsset",
-            "@type": "@id"
-        },
-        "controlledProperty": {
-            "@id": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#controlledProperty",
-            "@type": "@vocab"
-        },
+        "controlledAsset": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#controlledAsset",
+        "controlledProperty": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#controlledProperty",
         "country": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#country",
-        "dataProvider":"",
+        "dataProvider": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#dataProvider",
         "dateCreated": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#dateCreated",
-       "dateFirstUsed": {
-            "@id": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#dateFirstUsed",
-            "@type": "https://uri.etsi.org/ngsi-ld/DateTime"
-        },
+        "dateFirstUsed": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#dateFirstUsed",
         "dateInstalled": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#dateInstalled",
         "dateLastCalibration": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#dateLastCalibration",
         "dateLastValueReported": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#dateLastValueReported",
@@ -43,17 +31,11 @@
         "macAddress": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#macAddress",
         "mnc": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#mnc",
         "osVersion": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#osVersion",
-        "owner": {
-            "@id": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#owner",
-            "@type": "@id"
-        },
+        "owner": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#owner",
         "postalCode": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#postalCode",
-        "postcode": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#postcode",
+        "postcode": "postalCode",
         "provider": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#provider",
-        "refDeviceModel": {
-            "@id": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#refDeviceModel",
-            "@type": "@id"
-        },
+        "refDeviceModel": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#refDeviceModel",
         "rssi": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#rssi",
         "seeAlso": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#seeAlso",
         "serialNumber": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#serialNumber",
@@ -71,8 +53,6 @@
         "streetType": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#streetType",
         "supportedProtocol": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#supportedProtocol",
         "value": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld#value"
-
-
    },
-    "generatedAt": "2020-05-4T20:57:33+00:00"
+    "generatedAt": "2020-05-5T16:37:37+00:00"
 }

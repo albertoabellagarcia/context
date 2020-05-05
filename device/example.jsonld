@@ -2,9 +2,9 @@
   "@context " : "https://raw.githubusercontent.com/albertoabellagarcia/context/master/context.jsonld",
   "@id": "urn:ngsi-ld:Device:device-9845A",
   "@type": "device",
+
   "controlledAsset": ["urn:ngsi-ld:wastecontainer-Osuna-100"],
   "mnc": "07",
-  "macAddress": ["12:42:62:13:a4:b8", "14:22:62:b8:4a:12"],
   "ipAddress": ["192.14.56.78", "192.14.56.254"],
   "dateInstalled": "2014-09-11T10:30:23Z",
   "dateFirstUsed": "2014-09-11T11:00:00Z",
@@ -30,14 +30,18 @@
   "dataProvider": "orion-ld",
   "owner": ["http://person.org/leon"],
   "seeAlso": ["http://data-models.org"],
+
   "streetAddress": "1300 New york avenue",
   "addressLocality": "Washington",
   "addressRegion": "District of Columbia",
   "addressCountry": "United States",
   "postalCode": "20577",
+
   "category": ["sensor"],
   "controlledProperty": ["fillingLevel", "temperature"],
+  "macAddress": ["12:42:62:13:a4:b8", "14:22:62:b8:4a:12"],
   "supportedProtocol": ["bluetooth", "gprs"],
+
   "city": "Washington",
   "country": "United States",
   "locality": "Washington",
