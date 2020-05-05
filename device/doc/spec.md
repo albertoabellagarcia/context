@@ -42,21 +42,6 @@ A JSON Schema corresponding to this data model can be found at
 -    `dateLastValueReported` Date containing last data the device has been reporting values 
 -    `value` Values for the controlled properties in a single string
 
-### GSMA properties
--    `dateCreated` Date the value has been officially measured (independently of the actual creation)
--    `dateModified` Date the value has been officially modified (independently of the actual modification)
--    `source` String describing the source (i.e. network of devices)
--    `name` String describing the main name for the device
--    `alternateName` String describing an alternative name for the device 
--    `description` String with the full description of the device 
--    `dataProvider` String with the identification of the application or system where the device is connected
--   `owner` : Entity's owners.
-    -   Attribute type: `Relationship`. List of references to
-        [Person](http://schema.org/Person) or
-        [Organization](https://schema.org/Organization).
--    `owner` Array of Strings linking to the entity identifying the owner of the devices 
--    `seeAlso` Array of strings pointing to additional resources about the measurement 
-
 ### Location Commons properties 
 -   `location` : Location of device represented by a GeoJSON geometry.
     -   Attribute type: `GeoProperty` or `geo:json` (NGSIv2).

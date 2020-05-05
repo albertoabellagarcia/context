@@ -3,19 +3,31 @@
   "$id": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld",
   "title": "Terms included into the Smart Data Models",
   "definitions": {
-    "category": "Group of identifiers to classify some item",
-    "controlledAsset": "element to be controlled",
-    "controlledProperty": "Characteristic to be controlled of the element",
-    "ipAddress": "locator in internet, either under protocol ipv4 or ipv6",
-    "mcc": "",
-    "mnc": "",
     "batteryLevel": "Level of charge of the electrical storage facility",
-    "serialNumber": "identification string",
-    "refDeviceModel": "link to the device model object",
-    "rssi": "",
-    "value": "Measured magnitude",
-    "deviceState": "Situation of the device",
+    "controlledAsset": "Element to be controlled by a device",
+    "controlledProperty": "Characteristic to be controlled of the Asset",
     "dateFirstUsed": "First day of using the device",
-    "owner": "Identificator of the entity or person owning the device"
+    "dateInstalled": "Date of the first installation of the device",
+    "dateLastCalibration": "Date for the last date the device was calibrated",
+    "dateLastValueReported": "Date containing last data the device has been reporting values",
+    "dateManufactured": "Date identifying Final date of the device in the factory where it was built",
+    "deviceState": "Situation of the device",
+    "firmwareVersion": "Firmware version of the device",
+    "hardwareVersion": "Hardware version of the device",
+    "osVersion":  "operative system version of the device",
+    "postOfficeBoxNumber":  "Number in post Box Office",
+    "refDeviceModel": "Link to the device model object",
+    "rssi": "Received Signal Strength Indicator at device",
+    "softwareVersion": "Version of installed software",
+    "supportedProtocol": "communication protocol supported by the device",
+    "value": "Measured magnitude"
   }
 }
+
+
+
+
+
+
+
+

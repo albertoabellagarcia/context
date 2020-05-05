@@ -22,25 +22,20 @@
   "deviceState": "ok",
   "dateLastValueReported": "2020-05-01T11:00:00Z",
   "value": "l=0.22;t=21.2",
-  "dateCreated": "2014-09-11T10:30:23Z",
-  "dateModified": "2014-09-11T10:30:23Z",
-  "source": "TMforum",
-  "alternateName": "sensor container osuna 100",
-  "description": "Sensor in container calle osuna 100",
-  "dataProvider": "orion-ld",
-  "owner": ["http://person.org/leon"],
-  "seeAlso": ["http://data-models.org"],
 
-  "streetAddress": "1300 New york avenue",
-  "addressLocality": "Washington",
-  "addressRegion": "District of Columbia",
-  "addressCountry": "United States",
-  "postalCode": "20577",
+  "location": {
+    "type": "Point",
+    "coordinates": [-4.754444444, 41.640833333]
+  },
+  "streetAddress": "1300 New york Avenue",
+  "postOfficeBoxNumber" : "",
+  "areaServed": "Surroundings of IADB",
+
 
   "category": ["sensor"],
   "controlledProperty": ["fillingLevel", "temperature"],
-  "macAddress": ["12:42:62:13:a4:b8", "14:22:62:b8:4a:12"],
   "supportedProtocol": ["bluetooth", "gprs"],
+  "macAddress": ["12:42:62:13:a4:b8", "14:22:62:b8:4a:12"],
 
   "city": "Washington",
   "country": "United States",
@@ -48,13 +43,28 @@
   "postcode": "20577",
   "stateOrProvince": "District of Columbia",
   "streetName": "New York",
-  "streetNr": "100",
-  "streetNrLast": "120",
+  "streetNr": "1300",
+  "streetNrLast": "",
   "streetNrLastSuffix": "",
   "streetNrSuffix": "",
   "streetSuffix": "",
   "streetType": "Avenue",
-  "subAddress": "",
+  "subAddress": {
+    "buildingName": "IADB Building",
+    "id" : "",
+    "levelNumber": "4",
+    "levelType": "Regular floor",
+    "name": "Office 432",
+    "privateStreetName": "",
+    "privateStreetNumber": "",
+    "subUnitNumber": "32",
+    "SubAddressType": "Office",
+    "Entity": {
+      "@schemaLocation": "https://github.com/MEF-GIT/MEF-LSO-Sonata-SDK/blob/master/experimental/api/ProductSpecDescription/Ordering/UNISpec.json",
+      "@baseType": "product",
+      "@type": "UNISPec"
+     }
+  },
   "Entity": {
     "@schemaLocation": "https://github.com/MEF-GIT/MEF-LSO-Sonata-SDK/blob/master/experimental/api/ProductSpecDescription/Ordering/UNISpec.json",
     "@baseType": "product",
