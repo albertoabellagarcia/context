@@ -2,7 +2,7 @@
   "id": "Device:device-9845A",
   "type": "Device",
 
-  "controlledAsset": ["wastecontainer-Osuna-100"],
+  "controlledAsset": ["wastecontainer-IADB"],
   "mnc": "07",
   "ipAddress": ["192.14.56.78", "192.14.56.254"],
   "dateInstalled": "2014-09-11T10:30:23Z",
@@ -22,24 +22,23 @@
   "dateLastValueReported": "2020-05-01T11:00:00Z",
   "value": "l=0.22;t=21.2",
 
-  "location": {
-    "type": "Point",
-    "coordinates": [-4.754444444, 41.640833333]
-  },
-  "streetAddress": "1300 New york avenue",
-  "postOfficeBoxNumber" : "",
-  "areaServed" : "IADB surroundings",
-
   "category": ["sensor"],
   "controlledProperty": ["fillingLevel", "temperature"],
   "supportedProtocol": ["bluetooth", "gprs"],
   "macAddress": ["12:42:62:13:a4:b8", "14:22:62:b8:4a:12"],
+
+  "location": {
+    "type": "Point",
+    "coordinates": [-4.754444444, 41.640833333]
+  },
+  "areaServed" : "IADB surroundings",
 
   "city": "Washington",
   "country": "United States",
   "locality": "Washington",
   "postcode": "20577",
   "stateOrProvince": "District of Columbia",
+  "streetAddress": "1300 New york avenue",
   "streetName": "New York",
   "streetNr": "100",
   "streetNrLast": "120",
@@ -57,6 +56,7 @@
     "privateStreetNumber": "",
     "subUnitNumber": "32",
     "SubAddressType": "Office",
+    "postOfficeBoxNumber" : "",
     "Entity": {
       "@schemaLocation": "https://github.com/MEF-GIT/MEF-LSO-Sonata-SDK/blob/master/experimental/api/ProductSpecDescription/Ordering/UNISpec.json",
       "@baseType": "product",

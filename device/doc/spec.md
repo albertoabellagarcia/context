@@ -42,6 +42,11 @@ A JSON Schema corresponding to this data model can be found at
 -    `dateLastValueReported` Date containing last data the device has been reporting values 
 -    `value` Values for the controlled properties in a single string
 
+-   `category` Device type to be selected between the enum options. This case `sensor`
+-   `controlledProperty` Array of strings identifying properties to be controlled to be selected between the enum options
+-   `supportedProtocol` Array of strings identifying protocols enabled in the device 
+-   `macAddress` Array of strings identifying the mac addresses managed by the device 
+
 ### Location Commons properties 
 -   `location` : Location of device represented by a GeoJSON geometry.
     -   Attribute type: `GeoProperty` or `geo:json` (NGSIv2).
@@ -55,20 +60,12 @@ A JSON Schema corresponding to this data model can be found at
     -   Mandatory if `location` is not present.
     -   It includes these properties
         - `streetAddress`  String containing the description of the address
-        - `addressLocality` String containing the name of the locality
-        - `addressRegion` String containing the name of the Region
-        - `addressCountry` String containing the name of the Country
-        - `postalCode` String containing the postal code
+        - `addressLocality` alternatively, locality, (when using JSON-LD) String containing the name of the locality
+        - `addressRegion` alternatively, stateOrProvince, (when using JSON-LD) String containing the name of the Region
+        - `addressCountry` alternatively, country, (when using JSON-LD)String containing the name of the Country
+        - `postalCode` alternatively, postCode, (when using JSON-LD)String containing the postal code
         - `postOfficeBoxNumber` String containing the Box Office number
         - `AreaServed` String containing the name of the area served by the location
-
-### Device commons properties 
--   `category` Device type to be selected between the enum options. This case `sensor`
--   `controlledProperty` Array of strings identifying properties to be controlled to be selected between the enum options
--   `supportedProtocol` Array of strings identifying protocols enabled in the device 
--   `macAddress` Array of strings identifying the mac addresses managed by the device 
-  
-### TMForum address properties 
 -   `city` String with the city the address is in. 
 Equivalent to addressLocality
 -   `country` String with the country that the address is in. 
@@ -89,7 +86,6 @@ Equivalent to postalCode
 alley, avenue, boulevard, brae, crescent, drive, highway, lane, terrace, parade, place, tarn, way, wharf
 -   `subAddress` String within a property in an urban area, may refer to a building, building cluster, or a floor of a multistory building
 -   `Entity` Relation to an entity 
-
   
 **Note**: JSON Schemas are intended to capture the data type and associated
 constraints of the different Attributes, regardless their final representation
