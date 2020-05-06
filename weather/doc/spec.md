@@ -39,10 +39,10 @@ A JSON Schema corresponding to this data model can be found at
     time interval. 
     -   Attribute type: Property. [Text](https://schema.org/Text)
     -   Optional
--   `validFrom` : Validity period start date and time.
+-   `validFrom` : Validity period start date and time in ISO8601 format.
     -   Attribute type: Property. [DateTime](https://schema.org/DateTime).
     -   Optional
--   `validTo` : Validity period end date and time.
+-   `validTo` : Validity period end date and time in ISO8601 format.
     -   Attribute type: Property. [DateTime](https://schema.org/DateTime).
     -   Optional
 -   `dayMaximum` : Maximum values for the reported period.
@@ -68,9 +68,14 @@ A JSON Schema corresponding to this data model can be found at
 -   `precipitationProbability` : The probability of precipitation, expressed as parts per one)
     -   Attribute type: Property. [Number](https://schema.org/Number)
     -   Optional,
--   `temperature` : Air's temperature forecasted.
-    -   See [WeatherObserved.temperature](../WeatherObserved/README.md) for
-        description and units.
+-   `temperature` : Air's temperature observed.
+    -   Attribute type: Property. [Number](https://schema.org/Number)
+    -   Default unit: Degrees centigrades.
+    -   Attribute metadata (NGSIv2):
+        -   `timestamp` : optional timestamp for the observed value. It can be
+            omitted if the observation time is the same as the one captured by
+            the `dateObserved` attribute at entity level.
+            -   Type: [DateTime](https://schema.org/DateTime)
     -   Optional
 -   `feelsLikeTemperature` : Feels like temperature forecasted.
     -   Attribute type: Property. [Number](https://schema.org/Number)
@@ -78,19 +83,26 @@ A JSON Schema corresponding to this data model can be found at
     -   Optional
 -   `relativeHumidity` : Air's relative humidity forecasted (expressed in parts per one).
     -   Optional
--   `weatherType` : The forecasted weather type.
-    -   See [WeatherObserved.weatherType](../WeatherObserved/README.md) for
-        description and allowed values.
+-   `weatherType` : The observed weather type. It is represented by a comma
+    separated list of weather statuses, for instance `overcast, lightRain`.
+    -   Attribute type: Property. [Text](https://schema.org/Text)
+    -   Allowed values: A combination of (`clearNight`,`sunnyDay`,
+        `slightlyCloudy`, `partlyCloudy`, `mist`, `fog`, `highClouds`, `cloudy`,
+        `veryCloudy`, `overcast`, `lightRainShower`, `drizzle`, `lightRain`,
+        `heavyRainShower`, `heavyRain`, `sleetShower`, `sleet`, `hailShower`,
+        `hail`, `shower`, `lightSnow`, `snow`, `heavySnowShower`, `heavySnow`,
+        `thunderShower`, `thunder`) or any other extended value.
     -   Optional
--   `visibility` : Visibility forecasted.
-    -   See [WeatherObserved.visibility](../WeatherObserved/README.md) for
-        description and allowed values.
+-   `visibility` : Visibility reported.
+    -   Attribute type: Property. [Text](https://schema.org/Text)
+    -   Allowed values: One of (`veryPoor`, `poor`, `moderate`, `good`,
+        `veryGood`, `excellent`)
     -   Optional
 -   `windDirection` : The wind direction expressed in decimal degrees compared
     to geographic North (measured clockwise), encoded as a Number.
     -   Attribute type: Property. [Number](https://schema.org/Number)
-    -   Default unit: Decimal degrees
-    -   Attribute metadata:
+    -   Default unit: Decimal degrees. Range -180 to 180
+    -   Attribute metadata (NGSIv2):
         -   `timestamp` : optional timestamp for the observed value. It can be
             omitted if the observation time is the same as the one captured by
             the `dateObserved` attribute at entity level.
@@ -99,7 +111,7 @@ A JSON Schema corresponding to this data model can be found at
 -   `windSpeed` : The observed wind speed in m/s, encoded as a Number.
     -   Attribute type: Property. [Number](https://schema.org/Number)
     -   Default unit: meters per second
-    -   Attribute metadata:
+    -   Attribute metadata (NGSIv2):
         -   `timestamp` : optional timestamp for the observed value. It can be
             omitted if the observation time is the same as the one captured by
             the `dateObserved` attribute at entity level.

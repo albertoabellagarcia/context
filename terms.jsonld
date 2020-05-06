@@ -11,16 +11,28 @@
     "dateLastCalibration": "Date for the last date the device was calibrated",
     "dateLastValueReported": "Date containing last data the device has been reporting values",
     "dateManufactured": "Date identifying Final date of the device in the factory where it was built",
+    "dayMaximum": "Object compiling main maximum values for the parameters of a Weather forecast. https://smart-data-models.github.io/dataModel.Weather/weather-schema.json#/definitions/Weather-AirConditions",
+    "dayMinimum": "Object compiling main minimum values for the parameters of a Weather forecast. https://smart-data-models.github.io/dataModel.Weather/weather-schema.json#/definitions/Weather-AirConditions",
     "deviceState": "Situation of the device",
     "firmwareVersion": "Firmware version of the device",
     "hardwareVersion": "Hardware version of the device",
     "osVersion":  "operative system version of the device",
     "postOfficeBoxNumber":  "Number in post Box Office",
+    "precipitationProbability": "Likelihood of rain in a period",
     "refDeviceModel": "Link to the device model object",
+    "refPointOfInterest": "Link to the device model object",
     "rssi": "Received Signal Strength Indicator at device",
     "softwareVersion": "Version of installed software",
     "supportedProtocol": "communication protocol supported by the device",
-    "value": "Measured magnitude"
+    "value": "Measured magnitude",
+    "validity" : "Interval defined in ISO 8601",
+    "validFrom": "Start date time for the validity of a period",
+    "validTo": "End date time for the validity of a period",
+    "visibility": "Measure of the distance at which an object or light can be clearly discerned",
+    "weatherType": "Qualification of weather",
+    "windDirection": "-180 to 180 degrees of origin of wind",
+    "windSpeed": "Measure of the strength of wind"
+
   }
 }
 
