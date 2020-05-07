@@ -71,7 +71,7 @@ A JSON Schema corresponding to this data model can be found at
 -   `temperature` : Air's temperature observed.
     -   Attribute type: Property. [Number](https://schema.org/Number)
     -   Default unit: Degrees centigrades.
-    -   Attribute metadata (NGSIv2):
+    -   Attribute metadata (only for NGSIv2):
         -   `timestamp` : optional timestamp for the observed value. It can be
             omitted if the observation time is the same as the one captured by
             the `dateObserved` attribute at entity level.
@@ -102,7 +102,7 @@ A JSON Schema corresponding to this data model can be found at
     to geographic North (measured clockwise), encoded as a Number.
     -   Attribute type: Property. [Number](https://schema.org/Number)
     -   Default unit: Decimal degrees. Range -180 to 180
-    -   Attribute metadata (NGSIv2):
+    -   Attribute metadata (only for NGSIv2):
         -   `timestamp` : optional timestamp for the observed value. It can be
             omitted if the observation time is the same as the one captured by
             the `dateObserved` attribute at entity level.
@@ -111,7 +111,7 @@ A JSON Schema corresponding to this data model can be found at
 -   `windSpeed` : The observed wind speed in m/s, encoded as a Number.
     -   Attribute type: Property. [Number](https://schema.org/Number)
     -   Default unit: meters per second
-    -   Attribute metadata (NGSIv2):
+    -   Attribute metadata (only for NGSIv2):
         -   `timestamp` : optional timestamp for the observed value. It can be
             omitted if the observation time is the same as the one captured by
             the `dateObserved` attribute at entity level.
@@ -124,7 +124,7 @@ A JSON Schema corresponding to this data model can be found at
 
 ### Location properties
 -   `location` : Location of device represented by a GeoJSON geometry.
-    -   Attribute type: `GeoProperty` or `geo:json` (NGSIv2).
+    -   Attribute type: `GeoProperty` or `geo:json` (only for NGSIv2).
     -   Normative References:
         [https://tools.ietf.org/html/rfc7946](https://tools.ietf.org/html/rfc7946)
     -   Mandatory if `address` is not defined.
