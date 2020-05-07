@@ -1,4 +1,4 @@
-# Device
+# Weather Forecast
 In this repo there are these files
 - [example.json](example.json) a file with an example compatible with NGSIv2 based on key values on json
 - [example.jsonld](example.jsonld) a file with an example compatible with NGSI-LD based on key values on jsonld, 
