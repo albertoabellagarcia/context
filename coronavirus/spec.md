@@ -2,8 +2,7 @@
 
 ## Description
 
-This data model is a simplified version to treat massively data from corona virus infected persons
-and quite useful if adopted. Definitely
+This data model is a simplified version to treat massively data from corona virus infected persons.
 
 ## Data Model
 
