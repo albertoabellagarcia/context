@@ -3,6 +3,7 @@
 ## Description
 
 This data model is a simplified version to treat massively data from corona virus infected persons.
+definitely new PR
 
 ## Data Model
 
