@@ -32,16 +32,10 @@
     "type": "Point",
     "coordinates": [-4.754444444, 41.640833333]
   },
-  "address" : {
-    "streetAddress": "1300 New york Avenue",
-    "addressLocality" : "",
-    "addressRegion": "",
-    "addressCountry":  "",
-    "postalCode": "",
-    "postOfficeBoxNumber": "",
-    "areaServed": "Surroundings of IADB"
-  },
   "Address": {
+    "postOfficeBoxNumber": "",
+    "areaServed": "Surroundings of IADB",
+    "streetAddress": "1300 New york Avenue",
     "city": "Washington",
     "country": "United States",
     "locality": "Washington",
