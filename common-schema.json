@@ -3,7 +3,7 @@
   "$id": "https://raw.githubusercontent.com/albertoabellagarcia/context/test_branch/common-schema.json",
   "title": "Common definitions for  Harmonized Data Models",
   "definitions": {
-    "Location-Commons": {
+    "Locations": {
       "type": "object",
       "properties": {
         "location": {
