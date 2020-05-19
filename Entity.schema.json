@@ -11,10 +11,10 @@
       },
       "allOf": [
         {
-          "$ref": "../Common/Addressable.schema.json#Addressable"
+          "$ref": "Addressable.schema.json#Addressable"
         },
         {
-          "$ref": "../Common/Extensible.schema.json#Extensible"
+          "$ref": "Extensible.schema.json#Extensible"
         }
       ]
     }
