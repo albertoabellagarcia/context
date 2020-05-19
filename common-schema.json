@@ -6,6 +6,9 @@
     "Location-Commons": {
       "type": "object",
       "properties": {
+        "location": {
+          "$ref": "http://geojson.org/schema/Geometry.json#"
+        },
         "address": {
           "type": "object",
           "properties": {
