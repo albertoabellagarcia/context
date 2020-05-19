@@ -34,7 +34,7 @@
             },
             "locality": {
               "type": "string",
-              "description": "An area of defined or undefined boundaries within a local authority or other legislatively defined area, usually rural or semi rural in nature. [ANZLIC-STREET], or a suburb a bounded locality within a city, town or shire principally of urban character [ANZLICSTREET]"
+              "description": "An area of defined or undefined boundaries within a local authority or other legislatively defined area, usually rural or semi rural in nature.  or a suburb a bounded locality within a city, town or shire principally of urban character"
             },
             "postOfficeBoxNumber": {
               "type": "string"
@@ -83,7 +83,7 @@
             },
             "subAddress": {
               "$ref": "SubAddress.schema.json#SubAddress",
-              "description": "Within a property in an urban area, may refer to a building, building cluster, or a floor of a multistory building",
+              "description": "Within a property in an urban area, may refer to a building, building cluster, or a floor of a multistory building"
             },
             "allOf": [
               {
