@@ -44,7 +44,7 @@
             },
             "postcode": {
               "type": "string",
-              "description": "descriptor for a postal delivery area, used to speed and simplify the delivery of mail (also know as zipcode)"
+              "description": "descriptor for a postal delivery area, used to speed and simplify the delivery of mail (also know as zip code)"
             },
             "stateOrProvince": {
               "type": "string",
@@ -84,12 +84,7 @@
             "subAddress": {
               "$ref": "SubAddress.schema.json#SubAddress",
               "description": "Within a property in an urban area, may refer to a building, building cluster, or a floor of a multistory building"
-            },
-            "allOf": [
-              {
-                "$ref": "Entity.schema.json#Entity"
-              }
-            ]
+            }
           }
         }
       }
