@@ -4,16 +4,18 @@
   "title": "Common definitions for  Harmonized Data Models",
   "definitions": {
     "EntityIdentifierType": {
-      "anyOf": [{
-        "type": "string",
-        "minLength": 1,
-        "maxLength": 256,
-        "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$"
-      },
-      {
-        "type": "string",
-        "format": "uri"
-      }]
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256,
+          "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$"
+        },
+        {
+          "type": "string",
+          "format": "uri"
+        }
+      ]
     },
     "GSMA-Commons": {
       "type": "object",
@@ -36,10 +38,10 @@
           "type": "string"
         },
         "alternateName": {
-           "type": "string"
+          "type": "string"
         },
         "description": {
-           "type": "string"
+          "type": "string"
         },
         "dataProvider": {
           "type": "string"
@@ -47,7 +49,7 @@
         "owner": {
           "type": "array",
           "items": {
-                "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
           }
         },
         "seeAlso": {
@@ -73,7 +75,9 @@
     "Location-Commons": {
       "type": "object",
       "properties": {
-        "location": { "$ref": "http://geojson.org/schema/Geometry.json#" },
+        "location": {
+          "$ref": "http://geojson.org/schema/Geometry.json#"
+        },
         "address": {
           "type": "object",
           "properties": {
@@ -149,13 +153,12 @@
             "subAddress": {
               "$ref": "SubAddress.schema.json#SubAddress",
               "description": "Within a property in an urban area, may refer to a building, building cluster, or a floor of a multistory building"
-            }
-          },
-          "allOf": [
-            {
-              "$ref": "Entity.schema.json#Entity"
-            }
-          ]
+            },
+            "allOf": [
+              {
+                "$ref": "Entity.schema.json#Entity"
+              }
+            ]
           }
         }
       }
@@ -178,5 +181,6 @@
         }
       }
     }
+  }
 }
 
