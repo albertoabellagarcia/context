@@ -1,5 +1,5 @@
 {
-  "@context " : "https://raw.githubusercontent.com/albertoabellagarcia/context/master/context.jsonld",
+  "@context " : "https://github.com/albertoabellagarcia/context/blob/test_branch/context.jsonld",
   "@id": "urn:ngsi-ld:Device:device-9845A",
   "@type": "device",
 
