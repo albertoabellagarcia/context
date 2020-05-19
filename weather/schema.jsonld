@@ -13,9 +13,6 @@
       "$ref": "https://smart-data-models.github.io/dataModel.Weather/weather-schema.json#/definitions/Weather-Commons"
     },
     {
-      "$ref": "https://raw.githubusercontent.com/tmforum-rand/schemas/master/Common/Address.schema.json#/definitions/Address"
-    },
-    {
       "properties": {
         "type": {
           "type": "string",
@@ -70,5 +67,5 @@
       }
     }
   ],
-  "required": ["id", "type", "dateIssued", "address"]
+  "required": ["@id", "@type", "dateIssued", "address"]
 }
