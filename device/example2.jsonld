@@ -32,15 +32,8 @@
     "type": "Point",
     "coordinates": [-4.754444444, 41.640833333]
   },
-  "Address": {
-    "postOfficeBoxNumber": "",
-    "areaServed": "Surroundings of IADB",
+  "address": {
     "streetAddress": "1300 New york Avenue",
-    "city": "Washington",
-    "country": "United States",
-    "locality": "Washington",
-    "postcode": "20577",
-    "stateOrProvince": "District of Columbia",
     "streetName": "New York",
     "streetNr": "1300",
     "streetNrLast": "",
@@ -48,6 +41,13 @@
     "streetNrSuffix": "",
     "streetSuffix": "",
     "streetType": "Avenue",
+    "city": "Washington",
+    "country": "United States",
+    "locality": "Washington",
+    "stateOrProvince": "District of Columbia",
+    "postalCode": "20577",
+    "postOfficeBoxNumber": "",
+    "areaServed": "Surroundings of IADB",
     "subAddress": {
       "buildingName": "IADB Building",
       "id": "",
