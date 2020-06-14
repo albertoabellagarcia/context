@@ -15,4 +15,4 @@ They are is also compatible with the open source platform [FIWARE](https://githu
 
 Further developments to come
 
-Testing integration actions
+
