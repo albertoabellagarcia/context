@@ -14,3 +14,5 @@ This data model can be used with any json-friendly database (i.e. MongoDB, etc).
 They are is also compatible with the open source platform [FIWARE](https://github.com/FIWARE/) more info about it in its web page [http://fiware.org](http://fiware.org).
 
 Further developments to come
+
+Testing integration actions

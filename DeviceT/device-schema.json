@@ -114,13 +114,12 @@
       "macAddress": {
         "$ref": "/definitions/MacAddressType"
       },
-      In TMF Data Model all entities derive from Entity (i.e Extensible + Adressable)
-        "allOf": [
-              {
-                "$ref": "Entity.schema.json#Entity"
-              }
-            ]
-        },
+      "allOf":
+      [
+        {
+           "$ref": "Entity.schema.json#Entity"
+        }
+      ]
     }
   }
 }
