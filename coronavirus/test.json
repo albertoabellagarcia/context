@@ -1,7 +1,7 @@
 [{"name": "id", "type": "Attribute", "dataType": "object", "schema": "https://github.com/smart-data-models/dataModel.User/blob/master/Activity/schema.json", "dataModel": "Activity"},
  {"name": "dateCreated", "type": "Attribute", "dataType": "string", "format": "date-time", "schema": "https://github.com/smart-data-models/dataModel.User/blob/master/Activity/schema.json", "dataModel": "Activity"},
  {"name": "dateModified", "type": "Attribute", "dataType": "string", "format": "date-time", "schema": "https://github.com/smart-data-models/dataModel.User/blob/master/Activity/schema.json", "dataModel": "Activity"},
- {"name": "source", "type": "Attribute", "dataType": "string", "format": "lo obvias ¿por que?", "schema": "https://github.com/smart-data-models/dataModel.User/blob/master/Activity/schema.json", "dataModel": "Activity"},
+ {"name": "source", "type": "Attribute", "dataType": "string", "schema": "https://github.com/smart-data-models/dataModel.User/blob/master/Activity/schema.json", "dataModel": "Activity"},
  {"name": "name", "type": "Attribute", "dataType": "string", "schema": "https://github.com/smart-data-models/dataModel.User/blob/master/Activity/schema.json", "dataModel": "Activity"},
  {"name": "alternateName", "type": "Attribute", "dataType": "string", "schema": "https://github.com/smart-data-models/dataModel.User/blob/master/Activity/schema.json", "dataModel": "Activity"},
  {"name": "description", "type": "Attribute", "dataType": "string", "schema": "https://github.com/smart-data-models/dataModel.User/blob/master/Activity/schema.json", "dataModel": "Activity"},
