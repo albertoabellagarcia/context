@@ -70,11 +70,8 @@
         "postOfficeBoxNumber": "",
         "areaServed": "Surroundings of IADB",
         "subAddress": {
-            "@schemaLocation": "../SubAddress.json",
-            "@baseType": "SubAddress",
-            "@type": "SubAddress",
-            "href": "../subAddress/42",
             "buildingName": "IADB Building",
+            "href": "../subAddress/42",
             "id": "42",
             "levelNumber": "4",
             "levelType": "Regular floor",

@@ -1,8 +1,9 @@
 {
-  "@context " : "https://raw.githubusercontent.com/albertoabellagarcia/context/master/context.jsonld",
+  "@context" : "https://raw.githubusercontent.com/albertoabellagarcia/context/master/context.jsonld",
   "@id": "urn:ngsi-ld:Device:device-9845A",
   "@type": "device",
-
+  "@schemalocation": "",
+  "@basetype": "",
   "controlledAsset": ["urn:ngsi-ld:wastecontainer-IADB"],
   "mnc": "07",
   "ipAddress": ["192.14.56.78", "192.14.56.254"],
@@ -22,12 +23,10 @@
   "deviceState": "ok",
   "dateLastValueReported": "2020-05-01T11:00:00Z",
   "value": "l=0.22;t=21.2",
-
   "category": ["sensor"],
   "controlledProperty": ["fillingLevel", "temperature"],
   "supportedProtocol": ["bluetooth", "gprs"],
   "macAddress": ["12:42:62:13:a4:b8", "14:22:62:b8:4a:12"],
-
   "location": {
     "type": "Point",
     "coordinates": [-4.754444444, 41.640833333]
@@ -35,7 +34,6 @@
   "streetAddress": "1300 New york Avenue",
   "postOfficeBoxNumber" : "",
   "areaServed": "Surroundings of IADB",
-
   "city": "Washington",
   "country": "United States",
   "locality": "Washington",
@@ -57,16 +55,7 @@
     "privateStreetName": "",
     "privateStreetNumber": "",
     "subUnitNumber": "32",
-    "SubAddressType": "Office",
-    "Entity": {
-      "@schemaLocation": "https://github.com/MEF-GIT/MEF-LSO-Sonata-SDK/blob/master/experimental/api/ProductSpecDescription/Ordering/UNISpec.json",
-      "@baseType": "product",
-      "@type": "UNISPec"
-     }
+    "SubAddressType": "Office"
   },
-  "Entity": {
-    "@schemaLocation": "https://github.com/MEF-GIT/MEF-LSO-Sonata-SDK/blob/master/experimental/api/ProductSpecDescription/Ordering/UNISpec.json",
-    "@baseType": "product",
-    "@type": "UNISPec"
-  }
+  "href": "urn:ngsi-ld:Device:device-9845A"
 }
