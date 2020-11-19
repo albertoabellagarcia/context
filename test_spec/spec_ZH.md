@@ -3,51 +3,51 @@ Entity: ThreePhaseAcMeasurement
 ===============================
   
 **财产清单**  
-activeEnergyExport: 自计量开始日期以来每相输出的有效能量。实际值将由子属性传达，子属性的名称将等于每个交流电阶段的名称。L1, L2, L3.  
-activeEnergyImport: 输入的有功电能，即自计量开始日期以来每相消耗的电能。实际值将由子属性传达，子属性的名称将等于每个交流电相的名称。L1, L2, L3.  
-activePower: 实际值将由子属性来传达，这些子属性的名称将等于每个交流电相的名称。L1, L2, L3.  
-address:   
-alternateName:   
-apparentEnergyExport: 自计量开始日期以来每相输出的表观能量。实际值将由子属性传达，子属性的名称将等于每个交流电相的名称。L1, L2, L3.  
-apparentEnergyImport: 进口的表观能量，即自计量开始日期以来每相消耗的能量。实际值将由子属性传达，子属性的名称将等于每个交流电相的名称。L1, L2, L3.  
-apparentPower: 每相消耗的表象功率。实际值将由子属性传达，这些子属性的名称将等于每个交流电相的名称。L1, L2, L3  
-areaServed:   
-current: 电流。实际值将由每个交流电相位和中性线的一个子属性传达。L1, L2, L3和N.  
-dataProvider:   
-dateCreated:   
-dateEnergyMeteringStarted: 能源计量的起始日期。  
-dateModified:   
-description:   
-displacementPowerFactor: 各相的位移功率因数。这个数量是基于系统的基本频率。实际值将由每个交流电相的一个子属性来传达。L1, L2 和 L3  
-frequency: 电路的频率。  
-id:   
-location:   
-name:   
-owner:   
-phaseToPhaseVoltage: 相间电压。每个相位对的数值：相位1和2（L12），相位2和3（L32），相位3和1（L31）。  
-phaseVoltage: 每相与中性线之间的电压。实际值将由每个交流电相的一个子属性传达。L1、L2和L3。  
-powerFactor: 每相的功率因数。实际值将由每个交流电相的一个子属性来传达。L1、L2和L3  
-reactiveEnergyExport: 自计量开始日期以来每相输出的基频无功能量。实际值将由子属性传达，子属性的名称将等于每个交流电相的名称。L1, L2, L3.  
-reactiveEnergyImport: 输入的基频无功能量，即自计量开始日期以来每相消耗的能量。实际值将由子属性传达，子属性的名称将等于每个交流电相的名称。L1, L2, L3.  
-reactivePower: 基频无功功率。实际值将由子属性传达，子属性的名称将等于每个交流电相的名称。L1, L2, L3.  
-refDevice: 关系。用于获得测量的设备。  
-refTargetDevice: 关系。进行测量的设备。  
-seeAlso:   
-source:   
-thdCurrent: 电流的总谐波畸变。实际值将由每个交流电相位的一个子属性传达。L1、L2和L3  
-thdVoltage: 每相电压的总谐波畸变。实际值将由每个交流电相的一个子属性传达。L1、L2和L3  
-totalActiveEnergyExport: 自计量开始以来出口的能源总量(自 "dateEnergyMeteringStarted")。  
-totalActiveEnergyImport: 进口能源总量，即自计量开始以来（自 "能源计量开始的日期"）消耗的能源。  
-totalActivePower: 消耗的有功功率(计入所有相位)  
-totalApparentEnergyExport: 自计量开始日期("dateEnergyMeteringStarted")以来出口的能源总量(按视在功率计算)  
-totalApparentEnergyImport: 自计量开始日期(`dateEnergyMeteringStarted`)以来，进口的能源总量，即消耗的能源(按视在功率计算)。  
-totalApparentPower: 表象功耗（计算所有阶段）。  
-totalDisplacementPowerFactor: 包括所有相位的位移功率因数。该数值是基于系统的基本频率。  
-totalPowerFactor: 功率因数包括所有相位  
-totalReactiveEnergyExport: 自计量开始以来(自 "dateEnergyMeteringStarted")输出的基频无功能量总量。  
-totalReactiveEnergyImport: 自计量开始日期(`dateEnergyMeteringStarted`)以来，进口的总能量即消耗的能量(关于基频无功功率)  
-totalReactivePower: 消耗的无功功率(计入所有相位)  
-type: 它必须等于 "三相电流测量"。
+**activeEnergyExport**: 自计量开始日期以来每相输出的有效能量。实际值将由子属性传达，子属性的名称将等于每个交流电阶段的名称。L1, L2, L3.  
+**activeEnergyImport**: 输入的有功电能，即自计量开始日期以来每相消耗的电能。实际值将由子属性传达，子属性的名称将等于每个交流电相的名称。L1, L2, L3.  
+**activePower**: 实际值将由子属性来传达，这些子属性的名称将等于每个交流电相的名称。L1, L2, L3.  
+**address**:   
+**alternateName**:   
+**apparentEnergyExport**: 自计量开始日期以来每相输出的表观能量。实际值将由子属性传达，子属性的名称将等于每个交流电相的名称。L1, L2, L3.  
+**apparentEnergyImport**: 进口的表观能量，即自计量开始日期以来每相消耗的能量。实际值将由子属性传达，子属性的名称将等于每个交流电相的名称。L1, L2, L3.  
+**apparentPower**: 每相消耗的表象功率。实际值将由子属性传达，这些子属性的名称将等于每个交流电相的名称。L1, L2, L3  
+**areaServed**:   
+**current**: 电流。实际值将由每个交流电相位和中性线的一个子属性传达。L1, L2, L3和N.  
+**dataProvider**:   
+**dateCreated**:   
+**dateEnergyMeteringStarted**: 能源计量的起始日期。  
+**dateModified**:   
+**description**:   
+**displacementPowerFactor**: 各相的位移功率因数。这个数量是基于系统的基本频率。实际值将由每个交流电相的一个子属性来传达。L1, L2 和 L3  
+**frequency**: 电路的频率。  
+**id**:   
+**location**:   
+**name**:   
+**owner**:   
+**phaseToPhaseVoltage**: 相间电压。每个相位对的数值：相位1和2（L12），相位2和3（L32），相位3和1（L31）。  
+**phaseVoltage**: 每相与中性线之间的电压。实际值将由每个交流电相的一个子属性传达。L1、L2和L3。  
+**powerFactor**: 每相的功率因数。实际值将由每个交流电相的一个子属性来传达。L1、L2和L3  
+**reactiveEnergyExport**: 自计量开始日期以来每相输出的基频无功能量。实际值将由子属性传达，子属性的名称将等于每个交流电相的名称。L1, L2, L3.  
+**reactiveEnergyImport**: 输入的基频无功能量，即自计量开始日期以来每相消耗的能量。实际值将由子属性传达，子属性的名称将等于每个交流电相的名称。L1, L2, L3.  
+**reactivePower**: 基频无功功率。实际值将由子属性传达，子属性的名称将等于每个交流电相的名称。L1, L2, L3.  
+**refDevice**: 关系。用于获得测量的设备。  
+**refTargetDevice**: 关系。进行测量的设备。  
+**seeAlso**:   
+**source**:   
+**thdCurrent**: 电流的总谐波畸变。实际值将由每个交流电相位的一个子属性传达。L1、L2和L3  
+**thdVoltage**: 每相电压的总谐波畸变。实际值将由每个交流电相的一个子属性传达。L1、L2和L3  
+**totalActiveEnergyExport**: 自计量开始以来出口的能源总量(自 "dateEnergyMeteringStarted")。  
+**totalActiveEnergyImport**: 进口能源总量，即自计量开始以来（自 "能源计量开始的日期"）消耗的能源。  
+**totalActivePower**: 消耗的有功功率(计入所有相位)  
+**totalApparentEnergyExport**: 自计量开始日期("dateEnergyMeteringStarted")以来出口的能源总量(按视在功率计算)  
+**totalApparentEnergyImport**: 自计量开始日期(`dateEnergyMeteringStarted`)以来，进口的能源总量，即消耗的能源(按视在功率计算)。  
+**totalApparentPower**: 表象功耗（计算所有阶段）。  
+**totalDisplacementPowerFactor**: 包括所有相位的位移功率因数。该数值是基于系统的基本频率。  
+**totalPowerFactor**: 功率因数包括所有相位  
+**totalReactiveEnergyExport**: 自计量开始以来(自 "dateEnergyMeteringStarted")输出的基频无功能量总量。  
+**totalReactiveEnergyImport**: 自计量开始日期(`dateEnergyMeteringStarted`)以来，进口的总能量即消耗的能量(关于基频无功功率)  
+**totalReactivePower**: 消耗的无功功率(计入所有相位)  
+**type**: 它必须等于 "三相导电测量"。
 
 在总标题和说明之间加入文字。  
   

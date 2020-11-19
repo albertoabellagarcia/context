@@ -3,51 +3,51 @@ Entity: ThreePhaseAcMeasurement
 ===============================
   
 **Liste der Eigenschaften**  
-activeEnergyExport: Seit dem Startdatum der Messung pro Phase exportierte Wirkenergie. Die tatsächlichen Werte werden durch Untereigenschaften übermittelt, deren Namen den Namen der einzelnen Wechselstromphasen entsprechen: L1, L2, L3.  
-activeEnergyImport: Importierte Wirkenergie, d.h. pro Phase seit Beginn der Messung verbrauchte Energie. Die tatsächlichen Werte werden durch Untereigenschaften übermittelt, deren Namen den Namen der einzelnen Wechselstromphasen entsprechen: L1, L2, L3.  
-activePower: Die tatsächlichen Werte werden durch Untereigenschaften übermittelt, deren Namen den Namen der einzelnen Wechselstromphasen entsprechen: L1, L2, L3.  
-address:   
-alternateName:   
-apparentEnergyExport: Scheinenergie, die seit Beginn der Messung pro Phase exportiert wurde. Die tatsächlichen Werte werden durch Untereigenschaften übermittelt, deren Namen den Namen der einzelnen Wechselstromphasen entsprechen: L1, L2, L3.  
-apparentEnergyImport: Scheinbar importierte Energie, d.h. pro Phase seit Beginn der Messung verbrauchte Energie. Die tatsächlichen Werte werden durch Untereigenschaften übermittelt, deren Namen mit den Namen der einzelnen Wechselstromphasen übereinstimmen: L1, L2, L3.  
-apparentPower: Pro Phase verbrauchte Scheinleistung. Die tatsächlichen Werte werden durch Untereigenschaften übermittelt, deren Namen den Namen der einzelnen Wechselstromphasen entsprechen: L1, L2, L3  
-areaServed:   
-current: Elektrischer Strom. Die tatsächlichen Werte werden durch eine Untereigenschaft pro Wechselstromphase und den Neutralleiter übertragen: L1, L2, L3 und N.  
-dataProvider:   
-dateCreated:   
-dateEnergyMeteringStarted: Der Starttermin fÃ¼r die Energiemessung.  
-dateModified:   
-description:   
-displacementPowerFactor: Verdrängungsleistungsfaktor für jede Phase. Die Größe basiert auf der Grundfrequenz des Systems. Die tatsächlichen Werte werden durch eine Untereigenschaft pro Wechselstromphase übermittelt: L1, L2 und L3  
-frequency: Die Frequenz der Schaltung.  
-id:   
-location:   
-name:   
-owner:   
-phaseToPhaseVoltage: Spannung zwischen den Phasen. Ein Wert fÃ¼r jedes Phasenpaar: Phasen 1 und 2 (L12), Phasen 2 und 3 (L32), Phasen 3 und 1 (L31).  
-phaseVoltage: Die Spannung zwischen jeder Phase und dem Neutralleiter. Die tatsächlichen Werte werden durch eine Untereigenschaft pro Wechselstromphase übermittelt: L1, L2 und L3  
-powerFactor: Leistungsfaktor für jede Phase. Die tatsächlichen Werte werden durch eine Untereigenschaft pro Wechselstromphase übermittelt: L1, L2 und L3  
-reactiveEnergyExport: Grundfrequenz-Blindenergie, die seit Beginn der Messung pro Phase exportiert wurde. Die tatsächlichen Werte werden durch Untereigenschaften übermittelt, deren Namen den Namen der einzelnen Wechselstromphasen entsprechen: L1, L2, L3.  
-reactiveEnergyImport: Importierte, d.h. seit Messbeginn pro Phase verbrauchte Grundfrequenz-Blindenergie. Die tatsächlichen Werte werden durch Untereigenschaften übermittelt, deren Namen den Namen der einzelnen Wechselstromphasen entsprechen: L1, L2, L3.  
-reactivePower: Grundfrequenz-Blindleistung. Die tatsächlichen Werte werden durch Untereigenschaften übermittelt, deren Namen gleich dem Namen der einzelnen Wechselstromphasen sind: L1, L2, L3.  
-refDevice: Beziehung. GerÃ¤t(e), das (die) zum Erhalt der Messung verwendet wurde(n).  
-refTargetDevice: Beziehung. Gerät(e), für das/die die Messung durchgeführt wurde.  
-seeAlso:   
-source:   
-thdCurrent: Totale harmonische Verzerrung des elektrischen Stroms. Die tatsächlichen Werte werden durch eine Untereigenschaft pro Wechselstromphase übermittelt: L1, L2 und L3  
-thdVoltage: Totale harmonische Verzerrung der Spannung für jede Phase. Die tatsächlichen Werte werden durch eine Untereigenschaft pro Wechselstromphase übermittelt: L1, L2 und L3  
-totalActiveEnergyExport: Gesamte Energie, die seit Beginn der Messung exportiert wurde (seit `dateEnergyMeteringStarted`).  
-totalActiveEnergyImport: Gesamte importierte Energie, d.h. seit Beginn der Messung verbrauchte Energie (seit `DatumEnergiezÃ¤hlungBeginn`).  
-totalActivePower: verbrauchte Wirkleistung (ZÃ¤hlung aller Phasen)  
-totalApparentEnergyExport: Gesamte exportierte Energie (in Bezug auf die Scheinleistung) seit dem Datum des Beginns der Messung (`dateEnergyMeteringStarted`)  
-totalApparentEnergyImport: Gesamte importierte Energie, d.h. verbrauchte (in Bezug auf die Scheinleistung) seit Beginn der Messung (`dateEnergyMeteringStarted`)  
-totalApparentPower: Scheinbar verbrauchte Leistung (alle Phasen gezÃ¤hlt).  
-totalDisplacementPowerFactor: Verdrängungsleistungsfaktor einschließlich aller Phasen. Die Größe basiert auf der Grundfrequenz des Systems  
-totalPowerFactor: Leistungsfaktor einschlieÃŸlich aller Phasen  
-totalReactiveEnergyExport: Gesamte exportierte Grundfrequenz-Blindenergie seit Beginn der Messung (seit `dateEnergyMeteringStarted`).  
-totalReactiveEnergyImport: Gesamte importierte, d.h. verbrauchte Energie (im Hinblick auf die Grundfrequenz-Blindleistung) seit dem Datum des Beginns der Messung (`dateEnergyMeteringStarted`)  
-totalReactivePower: verbrauchte Blindleistung (ZÃ¤hlung aller Phasen)  
-type: Sie muss gleich der `Drei-Phasen-AcMessung` sein.
+**activeEnergyExport**: Seit dem Startdatum der Messung pro Phase exportierte Wirkenergie. Die tatsächlichen Werte werden durch Untereigenschaften übermittelt, deren Namen den Namen der einzelnen Wechselstromphasen entsprechen: L1, L2, L3.  
+**activeEnergyImport**: Importierte Wirkenergie, d.h. pro Phase seit Beginn der Messung verbrauchte Energie. Die tatsächlichen Werte werden durch Untereigenschaften übermittelt, deren Namen den Namen der einzelnen Wechselstromphasen entsprechen: L1, L2, L3.  
+**activePower**: Die tatsächlichen Werte werden durch Untereigenschaften übermittelt, deren Namen den Namen der einzelnen Wechselstromphasen entsprechen: L1, L2, L3.  
+**address**:   
+**alternateName**:   
+**apparentEnergyExport**: Scheinenergie, die seit Beginn der Messung pro Phase exportiert wurde. Die tatsächlichen Werte werden durch Untereigenschaften übermittelt, deren Namen den Namen der einzelnen Wechselstromphasen entsprechen: L1, L2, L3.  
+**apparentEnergyImport**: Scheinbar importierte Energie, d.h. pro Phase seit Beginn der Messung verbrauchte Energie. Die tatsächlichen Werte werden durch Untereigenschaften übermittelt, deren Namen mit den Namen der einzelnen Wechselstromphasen übereinstimmen: L1, L2, L3.  
+**apparentPower**: Pro Phase verbrauchte Scheinleistung. Die tatsächlichen Werte werden durch Untereigenschaften übermittelt, deren Namen den Namen der einzelnen Wechselstromphasen entsprechen: L1, L2, L3  
+**areaServed**:   
+**current**: Elektrischer Strom. Die tatsächlichen Werte werden durch eine Untereigenschaft pro Wechselstromphase und den Neutralleiter übertragen: L1, L2, L3 und N.  
+**dataProvider**:   
+**dateCreated**:   
+**dateEnergyMeteringStarted**: Der Starttermin fÃ¼r die Energiemessung.  
+**dateModified**:   
+**description**:   
+**displacementPowerFactor**: Verdrängungsleistungsfaktor für jede Phase. Die Größe basiert auf der Grundfrequenz des Systems. Die tatsächlichen Werte werden durch eine Untereigenschaft pro Wechselstromphase übermittelt: L1, L2 und L3  
+**frequency**: Die Frequenz der Schaltung.  
+**id**:   
+**location**:   
+**name**:   
+**owner**:   
+**phaseToPhaseVoltage**: Spannung zwischen den Phasen. Ein Wert fÃ¼r jedes Phasenpaar: Phasen 1 und 2 (L12), Phasen 2 und 3 (L32), Phasen 3 und 1 (L31).  
+**phaseVoltage**: Die Spannung zwischen jeder Phase und dem Neutralleiter. Die tatsächlichen Werte werden durch eine Untereigenschaft pro Wechselstromphase übermittelt: L1, L2 und L3  
+**powerFactor**: Leistungsfaktor für jede Phase. Die tatsächlichen Werte werden durch eine Untereigenschaft pro Wechselstromphase übermittelt: L1, L2 und L3  
+**reactiveEnergyExport**: Grundfrequenz-Blindenergie, die seit Beginn der Messung pro Phase exportiert wurde. Die tatsächlichen Werte werden durch Untereigenschaften übermittelt, deren Namen den Namen der einzelnen Wechselstromphasen entsprechen: L1, L2, L3.  
+**reactiveEnergyImport**: Importierte, d.h. seit Messbeginn pro Phase verbrauchte Grundfrequenz-Blindenergie. Die tatsächlichen Werte werden durch Untereigenschaften übermittelt, deren Namen den Namen der einzelnen Wechselstromphasen entsprechen: L1, L2, L3.  
+**reactivePower**: Grundfrequenz-Blindleistung. Die tatsächlichen Werte werden durch Untereigenschaften übermittelt, deren Namen gleich dem Namen der einzelnen Wechselstromphasen sind: L1, L2, L3.  
+**refDevice**: Beziehung. GerÃ¤t(e), das (die) zum Erhalt der Messung verwendet wurde(n).  
+**refTargetDevice**: Beziehung. Gerät(e), für das/die die Messung durchgeführt wurde.  
+**seeAlso**:   
+**source**:   
+**thdCurrent**: Totale harmonische Verzerrung des elektrischen Stroms. Die tatsächlichen Werte werden durch eine Untereigenschaft pro Wechselstromphase übermittelt: L1, L2 und L3  
+**thdVoltage**: Totale harmonische Verzerrung der Spannung für jede Phase. Die tatsächlichen Werte werden durch eine Untereigenschaft pro Wechselstromphase übermittelt: L1, L2 und L3  
+**totalActiveEnergyExport**: Gesamte Energie, die seit Beginn der Messung exportiert wurde (seit `dateEnergyMeteringStarted`).  
+**totalActiveEnergyImport**: Gesamte importierte Energie, d.h. seit Beginn der Messung verbrauchte Energie (seit `DatumEnergiezÃ¤hlungBeginn`).  
+**totalActivePower**: verbrauchte Wirkleistung (ZÃ¤hlung aller Phasen)  
+**totalApparentEnergyExport**: Gesamte exportierte Energie (in Bezug auf die Scheinleistung) seit dem Datum des Beginns der Messung (`dateEnergyMeteringStarted`)  
+**totalApparentEnergyImport**: Gesamte importierte Energie, d.h. verbrauchte (in Bezug auf die Scheinleistung) seit Beginn der Messung (`dateEnergyMeteringStarted`)  
+**totalApparentPower**: Scheinbar verbrauchte Leistung (alle Phasen gezÃ¤hlt).  
+**totalDisplacementPowerFactor**: Verdrängungsleistungsfaktor einschließlich aller Phasen. Die Größe basiert auf der Grundfrequenz des Systems  
+**totalPowerFactor**: Leistungsfaktor einschlieÃŸlich aller Phasen  
+**totalReactiveEnergyExport**: Gesamte exportierte Grundfrequenz-Blindenergie seit Beginn der Messung (seit `dateEnergyMeteringStarted`).  
+**totalReactiveEnergyImport**: Gesamte importierte, d.h. verbrauchte Energie (im Hinblick auf die Grundfrequenz-Blindleistung) seit dem Datum des Beginns der Messung (`dateEnergyMeteringStarted`)  
+**totalReactivePower**: verbrauchte Blindleistung (ZÃ¤hlung aller Phasen)  
+**type**: Sie muss gleich der `Drei-Phasen-AcMessung` sein.
 
 Text, der zwischen Gesamttitel und Beschreibung einzufÃ¼gen ist.  
   
@@ -55,1752 +55,590 @@ Globale Beschreibung: **eine elektrische Messung aus einem System, das dreiphasi
 ## Datenmodell-Beschreibung der Eigenschaften
 
 
-Alphabetisch geordnet
-
+```yamlAlphabetisch geordnet
 ThreePhaseAcMeasurement:
-
-
   description: 'An electrical  measurement from a system that uses three phase alternating current.'
-
-
   properties:
-
-
     activeEnergyExport:
-
-
       description: 'Active energy exported per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.'
-
-
       properties:
-
-
         L1:
-
-
           minimum: 0
-
-
           type: number
-
-
         L2:
-
-
           minimum: 0
-
-
           type: number
-
-
         L3:
-
-
           minimum: 0
-
-
           type: number
-
-
       type: Property
-
-
       x-ngsi:
-
-
         model: http://schema.org/StructuredValue
-
-
         units: 'kilowatt hour (kWh)'
-
-
     activeEnergyImport:
-
-
       description: 'Active energy imported i.e. consumed per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.'
-
-
       properties:
-
-
         L1:
-
-
           minimum: 0
-
-
           type: number
-
-
         L2:
-
-
           minimum: 0
-
-
           type: number
-
-
         L3:
-
-
           minimum: 0
-
-
           type: number
-
-
       type: Property
-
-
       x-ngsi:
-
-
         model: http://schema.org/StructuredValue
-
-
         units: 'kilowatt hour (kWh)'
-
-
     activePower:
-
-
       description: 'The actual values will beconveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3. '
-
-
       properties:
-
-
         L1:
-
-
           type: number
-
-
         L2:
-
-
           type: number
-
-
         L3:
-
-
           type: number
-
-
       type: Property
-
-
       x-ngsi:
-
-
         model: http://schema.org/StructuredValue
-
-
         units: 'watt (W).Active power consumed per phase'
-
-
     address:
-
-
       properties:
-
-
         addressCountry:
-
-
           type: string
-
-
         addressLocality:
-
-
           type: string
-
-
         addressRegion:
-
-
           type: string
-
-
         areaServed:
-
-
           type: string
-
-
         postOfficeBoxNumber:
-
-
           type: string
-
-
         postalCode:
-
-
           type: string
-
-
         streetAddress:
-
-
           type: string
-
-
       type: object
-
-
     alternateName:
-
-
       type: string
-
-
     apparentEnergyExport:
-
-
       description: 'Apparent energy exported per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.'
-
-
       properties:
-
-
         L1:
-
-
           minimum: 0
-
-
           type: number
-
-
         L2:
-
-
           minimum: 0
-
-
           type: number
-
-
         L3:
-
-
           minimum: 0
-
-
           type: number
-
-
       type: Property
-
-
       x-ngsi:
-
-
         model: http://schema.org/StructuredValue
-
-
         units: 'kilovolt-ampere-hour (kVAh)'
-
-
     apparentEnergyImport:
-
-
       description: 'Apparent energy imported i.e. consumed per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.'
-
-
       properties:
-
-
         L1:
-
-
           minimum: 0
-
-
           type: number
-
-
         L2:
-
-
           minimum: 0
-
-
           type: number
-
-
         L3:
-
-
           minimum: 0
-
-
           type: number
-
-
       type: Property
-
-
       x-ngsi:
-
-
         model: http://schema.org/StructuredValue
-
-
         units: 'kilovolt-ampere-hour (kVAh)'
-
-
     apparentPower:
-
-
       description: 'Apparent power consumed per phase. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3'
-
-
       properties:
-
-
         L1:
-
-
           minimum: 0
-
-
           type: number
-
-
         L2:
-
-
           minimum: 0
-
-
           type: number
-
-
         L3:
-
-
           minimum: 0
-
-
           type: number
-
-
       type: Property
-
-
       x-ngsi:
-
-
         model: http://schema.org/StructuredValue
-
-
         units: 'volt-ampere (VA)'
-
-
     areaServed:
-
-
       type: string
-
-
     current:
-
-
       description: 'Electrical current. The actual values will be conveyed by one subproperty per alternating current phase and the neutral wire: L1, L2, L3 and N.'
-
-
       properties:
-
-
         L1:
-
-
           type: number
-
-
         L2:
-
-
           type: number
-
-
         L3:
-
-
           type: number
-
-
         N:
-
-
           type: number
-
-
       type: Property
-
-
       x-ngsi:
-
-
         model: http://schema.org/StructuredValue
-
-
         units: 'Ampers (A)'
-
-
     dataProvider:
-
-
       type: string
-
-
     dateCreated:
-
-
       format: date-time
-
-
       type: string
-
-
     dateEnergyMeteringStarted:
-
-
       description: 'The starting date for metering energy.'
-
-
       format: date-time
-
-
       type: Property
-
-
       x-ngsi:
-
-
         model: http://schema.org/DateTime
-
-
     dateModified:
-
-
       format: date-time
-
-
       type: string
-
-
     description:
-
-
       type: string
-
-
     displacementPowerFactor:
-
-
       description: 'Displacement power factor for each phase. The quantity is based on the fundamental frequency of the system. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3'
-
-
       properties:
-
-
         L1:
-
-
           maximum: 1
-
-
           minimum: -1
-
-
           type: number
-
-
         L2:
-
-
           maximum: 1
-
-
           minimum: -1
-
-
           type: number
-
-
         L3:
-
-
           maximum: 1
-
-
           minimum: -1
-
-
           type: number
-
-
       type: Property
-
-
       x-ngsi:
-
-
         model: http://schema.org/StructuredValue
-
-
         units: '-1 to +1'
-
-
     frequency:
-
-
       description: 'The frequency of the circuit.'
-
-
       minimum: 0
-
-
       type: Property
-
-
       x-ngsi:
-
-
         model: http://schema.org/Number
-
-
         units: 'Hertz (Hz)'
-
-
     id:
-
-
       anyOf: &threephaseacmeasurement_-_properties_-_owner_-_items_-_anyof
-
-
         - maxLength: 256
-
-
           minLength: 1
-
-
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
-
-
           type: string
-
-
         - format: uri
-
-
           type: string
-
-
     location:
-
-
       $id: https://geojson.org/schema/Geometry.json
-
-
       $schema: "http://json-schema.org/draft-07/schema#"
-
-
       oneOf:
-
-
         - properties:
-
-
             bbox:
-
-
               items:
-
-
                 type: number
-
-
               minItems: 4
-
-
               type: array
-
-
             coordinates:
-
-
               items:
-
-
                 type: number
-
-
               minItems: 2
-
-
               type: array
-
-
             type:
-
-
               enum:
-
-
                 - Point
-
-
               type: string
-
-
           required:
-
-
             - type
-
-
             - coordinates
-
-
           title: 'GeoJSON Point'
-
-
           type: object
-
-
         - properties:
-
-
             bbox:
-
-
               items:
-
-
                 type: number
-
-
               minItems: 4
-
-
               type: array
-
-
             coordinates:
-
-
               items:
-
-
                 items:
-
-
                   type: number
-
-
                 minItems: 2
-
-
                 type: array
-
-
               minItems: 2
-
-
               type: array
-
-
             type:
-
-
               enum:
-
-
                 - LineString
-
-
               type: string
-
-
           required:
-
-
             - type
-
-
             - coordinates
-
-
           title: 'GeoJSON LineString'
-
-
           type: object
-
-
         - properties:
-
-
             bbox:
-
-
               items:
-
-
                 type: number
-
-
               minItems: 4
-
-
               type: array
-
-
             coordinates:
-
-
               items:
-
-
                 items:
-
-
                   items:
-
-
                     type: number
-
-
                   minItems: 2
-
-
                   type: array
-
-
                 minItems: 4
-
-
                 type: array
-
-
               type: array
-
-
             type:
-
-
               enum:
-
-
                 - Polygon
-
-
               type: string
-
-
           required:
-
-
             - type
-
-
             - coordinates
-
-
           title: 'GeoJSON Polygon'
-
-
           type: object
-
-
         - properties:
-
-
             bbox:
-
-
               items:
-
-
                 type: number
-
-
               minItems: 4
-
-
               type: array
-
-
             coordinates:
-
-
               items:
-
-
                 items:
-
-
                   type: number
-
-
                 minItems: 2
-
-
                 type: array
-
-
               type: array
-
-
             type:
-
-
               enum:
-
-
                 - MultiPoint
-
-
               type: string
-
-
           required:
-
-
             - type
-
-
             - coordinates
-
-
           title: 'GeoJSON MultiPoint'
-
-
           type: object
-
-
         - properties:
-
-
             bbox:
-
-
               items:
-
-
                 type: number
-
-
               minItems: 4
-
-
               type: array
-
-
             coordinates:
-
-
               items:
-
-
                 items:
-
-
                   items:
-
-
                     type: number
-
-
                   minItems: 2
-
-
                   type: array
-
-
                 minItems: 2
-
-
                 type: array
-
-
               type: array
-
-
             type:
-
-
               enum:
-
-
                 - MultiLineString
-
-
               type: string
-
-
           required:
-
-
             - type
-
-
             - coordinates
-
-
           title: 'GeoJSON MultiLineString'
-
-
           type: object
-
-
         - properties:
-
-
             bbox:
-
-
               items:
-
-
                 type: number
-
-
               minItems: 4
-
-
               type: array
-
-
             coordinates:
-
-
               items:
-
-
                 items:
-
-
                   items:
-
-
                     items:
-
-
                       type: number
-
-
                     minItems: 2
-
-
                     type: array
-
-
                   minItems: 4
-
-
                   type: array
-
-
                 type: array
-
-
               type: array
-
-
             type:
-
-
               enum:
-
-
                 - MultiPolygon
-
-
               type: string
-
-
           required:
-
-
             - type
-
-
             - coordinates
-
-
           title: 'GeoJSON MultiPolygon'
-
-
           type: object
-
-
       title: 'GeoJSON Geometry'
-
-
     name:
-
-
       type: string
-
-
     owner:
-
-
       items:
-
-
         anyOf: *threephaseacmeasurement_-_properties_-_owner_-_items_-_anyof
-
-
       type: array
-
-
     phaseToPhaseVoltage:
-
-
       description: 'Voltage between phases. A value for each phase pair: phases 1 and 2 (L12), phases 2 and 3 (L32), phases 3 and 1 (L31).'
-
-
       properties:
-
-
         L12:
-
-
           minimum: 0
-
-
           type: number
-
-
         L23:
-
-
           minimum: 0
-
-
           type: number
-
-
         L31:
-
-
           minimum: 0
-
-
           type: number
-
-
       type: Property
-
-
       x-ngsi:
-
-
         model: (http://schema.org/StructuredValue
-
-
         units: 'Volts (V)'
-
-
     phaseVoltage:
-
-
       description: 'The voltage between each phase and neutral conductor. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3'
-
-
       properties:
-
-
         L1:
-
-
           minimum: 0
-
-
           type: number
-
-
         L2:
-
-
           minimum: 0
-
-
           type: number
-
-
         L3:
-
-
           minimum: 0
-
-
           type: number
-
-
       type: Property
-
-
       x-ngsi:
-
-
         model: http://schema.org/StructuredValue
-
-
         units: 'Volts (V)'
-
-
     powerFactor:
-
-
       description: 'Power factor for each phase. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3'
-
-
       properties:
-
-
         L1:
-
-
           maximum: 1
-
-
           minimum: -1
-
-
           type: number
-
-
         L2:
-
-
           maximum: 1
-
-
           minimum: -1
-
-
           type: number
-
-
         L3:
-
-
           maximum: 1
-
-
           minimum: -1
-
-
           type: number
-
-
       type: Property
-
-
       x-ngsi:
-
-
         model: http://schema.org/StructuredValue
-
-
         units: '-1 to +1'
-
-
     reactiveEnergyExport:
-
-
       description: 'Fundamental frequency reactive energy exported per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.'
-
-
       properties:
-
-
         L1:
-
-
           minimum: 0
-
-
           type: number
-
-
         L2:
-
-
           minimum: 0
-
-
           type: number
-
-
         L3:
-
-
           minimum: 0
-
-
           type: number
-
-
       type: Property
-
-
       x-ngsi:
-
-
         model: http://schema.org/StructuredValue
-
-
         units: 'kilovolt-ampere-reactive-hour (kVArh)'
-
-
     reactiveEnergyImport:
-
-
       description: 'Fundamental frequency reactive energy imported i.e. consumed per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.'
-
-
       properties:
-
-
         L1:
-
-
           minimum: 0
-
-
           type: number
-
-
         L2:
-
-
           minimum: 0
-
-
           type: number
-
-
         L3:
-
-
           minimum: 0
-
-
           type: number
-
-
       type: Property
-
-
       x-ngsi:
-
-
         model: 'kilovolt-ampere-reactive-hour (kVArh)'
-
-
         units: http://schema.org/StructuredValue
-
-
     reactivePower:
-
-
       description: 'Fundamental frequency reactive power. The actual values will be conveyed by subproperties whose names will be equal to the name of each of the alternating current phases: L1, L2, L3.'
-
-
       properties:
-
-
         L1:
-
-
           type: number
-
-
         L2:
-
-
           type: number
-
-
         L3:
-
-
           type: number
-
-
       type: Property
-
-
       x-ngsi:
-
-
         model: http://schema.org/StructuredValue
-
-
         units: 'volts-ampere-reactive (VAr)'
-
-
     refDevice:
-
-
       description: 'Relationship. Device(s) used to obtain the measurement.'
-
-
       items:
-
-
         anyOf: *threephaseacmeasurement_-_properties_-_owner_-_items_-_anyof
-
-
       minItems: 1
-
-
       type: array
-
-
       uniqueItems: true
-
-
     refTargetDevice:
-
-
       description: 'Relationship. Device(s) for which the measurement was taken.'
-
-
       items:
-
-
         anyOf: *threephaseacmeasurement_-_properties_-_owner_-_items_-_anyof
-
-
       minItems: 1
-
-
       type: array
-
-
       uniqueItems: true
-
-
     seeAlso:
-
-
       oneOf:
-
-
         - items:
-
-
             - format: uri
-
-
               type: string
-
-
           minItems: 1
-
-
           type: array
-
-
         - format: uri
-
-
           type: string
-
-
     source:
-
-
       type: string
-
-
     thdCurrent:
-
-
       description: 'Total harmonic distortion of electrical current. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3'
-
-
       properties:
-
-
         L1:
-
-
           maximum: 1
-
-
           minimum: 0
-
-
           type: number
-
-
         L2:
-
-
           maximum: 1
-
-
           minimum: 0
-
-
           type: number
-
-
         L3:
-
-
           maximum: 1
-
-
           minimum: 0
-
-
           type: number
-
-
       type: Property
-
-
       x-ngsi:
-
-
         model: http://schema.org/StructuredValue
-
-
         units: '0 to 1'
-
-
     thdVoltage:
-
-
       description: 'Total harmonic distortion of voltage for each phase. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3'
-
-
       properties:
-
-
         L1:
-
-
           maximum: 1
-
-
           minimum: 0
-
-
           type: number
-
-
         L2:
-
-
           maximum: 1
-
-
           minimum: 0
-
-
           type: number
-
-
         L3:
-
-
           maximum: 1
-
-
           minimum: 0
-
-
           type: number
-
-
       type: Property
-
-
       x-ngsi:
-
-
         model: http://schema.org/StructuredValue
-
-
         units: '0 to 1'
-
-
     totalActiveEnergyExport:
-
-
       description: 'Total energy exported since metering started (since `dateEnergyMeteringStarted`).'
-
-
       minimum: 0
-
-
       type: Property
-
-
       x-ngsi:
-
-
         model: https://schema.org/Number
-
-
         units: 'kilowatt hour (kWh)'
-
-
     totalActiveEnergyImport:
-
-
       description: 'Total energy imported i.e. consumed since metering started (since `dateEnergyMeteringStarted`).'
-
-
       minimum: 0
-
-
       type: Property
-
-
       x-ngsi:
-
-
         model: https://schema.org/Number
-
-
         units: 'kilowatt hour (kWh)'
-
-
     totalActivePower:
-
-
       description: 'Active power consumed (counting all phases)'
-
-
       type: Property
-
-
       x-ngsi:
-
-
         model: http://schema.org/Number
-
-
         units: 'watt (W)'
-
-
     totalApparentEnergyExport:
-
-
       description: 'Total energy exported (with regards to apparent power) since the metering start date (`dateEnergyMeteringStarted`)'
-
-
       minimum: 0
-
-
       type: Property
-
-
       x-ngsi:
-
-
         model: https://schema.org/Number
-
-
         units: 'kilovolt-ampere-reactive-hour (kVArh)'
-
-
     totalApparentEnergyImport:
-
-
       description: 'Total energy imported i.e. consumed (with regards to apparent power) since the metering start date (`dateEnergyMeteringStarted`)'
-
-
       minimum: 0
-
-
       type: Property
-
-
       x-ngsi:
-
-
         model: https://schema.org/Number
-
-
         units: 'kilovolt-ampere-hour (kVAh)'
-
-
     totalApparentPower:
-
-
       description: 'Apparent power consumed (counting all phases).'
-
-
       minimum: 0
-
-
       type: Property
-
-
       x-ngsi:
-
-
         model: http://schema.org/Number
-
-
         units: 'volt-ampere (VA)'
-
-
     totalDisplacementPowerFactor:
-
-
       description: 'Displacement power factor including all phases. The quantity is based on the fundamental frequency of the system'
-
-
       maximum: 1
-
-
       minimum: -1
-
-
       type: Property
-
-
       x-ngsi:
-
-
         model: http://schema.org/Number
-
-
         units: '-1 to +1'
-
-
     totalPowerFactor:
-
-
       description: 'Power factor including all phases'
-
-
       maximum: 1
-
-
       minimum: -1
-
-
       type: Property
-
-
       x-ngsi:
-
-
         model: http://schema.org/Number
-
-
         units: '-1 to +1'
-
-
     totalReactiveEnergyExport:
-
-
       description: 'Total fundamental frequency reactive energy exported since metering started (since `dateEnergyMeteringStarted`).'
-
-
       minimum: 0
-
-
       type: Property
-
-
       x-ngsi:
-
-
         model: https://schema.org/Number
-
-
         units: 'kilovolt-ampere-reactive-hour (kVArh)'
-
-
     totalReactiveEnergyImport:
-
-
       description: 'Total energy imported i.e. consumed (with regards to fundamental frequency reactive power) since the metering start date (`dateEnergyMeteringStarted`)'
-
-
       minimum: 0
-
-
       type: Property
-
-
       x-ngsi:
-
-
         model: https://schema.org/Number
-
-
         units: 'kilovolt-ampere-reactive-hour (kVArh)'
-
-
     totalReactivePower:
-
-
       description: 'Reactive power consumed (counting all phases)'
-
-
       type: Property
-
-
       x-ngsi:
-
-
         model: http://schema.org/Number
-
-
         units: 'volt-ampere-reactive (VAr)'
-
-
     type:
-
-
       description: 'It must be equal to `ThreePhaseAcMeasurement`.'
-
-
       enum:
-
-
         - ThreePhaseAcMeasurement
-
-
       type: Property
-
-
   required:
-
-
     - id
-
-
     - type
-
-
   type: object
-
-
 Text, der nach der Liste der Eigenschaften einzufÃ¼gen ist
-
-NGSI V2 key-values Example
-
+```
+## ExamplesNGSI V2 key-values Example
 ```json
 {
   "id": "ThreePhaseAcMeasurement:LV3_Ventilation",
@@ -1869,11 +707,8 @@ NGSI V2 key-values Example
     "L3": 0.4938652
   }
 }
-
 ```
-
 NGSI V2 normalized Example
-
 ```json
 {
   "id": "ThreePhaseAcMeasurement:LV3_Ventilation",
@@ -2196,11 +1031,8 @@ NGSI V2 normalized Example
     }
   }
 }
-
 ```
-
 NGSI-LD key-values Example
-
 ```json
 {"@context": ["https://schema.lab.fiware.org/ld/context",
               "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"],
@@ -2232,9 +1064,7 @@ NGSI-LD key-values Example
  "totalReactivePower": -7830.332031,
  "type": "ThreePhaseAcMeasurement"}
 ```
-
 NGSI-LD normalized Example
-
 ```json
 {
     "id": "urn:ngsi-ld:ThreePhaseAcMeasurement:ThreePhaseAcMeasurement:LV3_Ventilation",
@@ -2516,7 +1346,5 @@ NGSI-LD normalized Example
         "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
     ]
 }
-
 ```
-
 Immerhin Text
