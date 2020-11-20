@@ -638,7 +638,9 @@ ThreePhaseAcMeasurement:
   type: object
 El texto se incluirá después de la lista de propiedades
 ```
-## ExamplesNGSI V2 key-values Example
+
+## Examples
+NGSI V2 key-values Example
 ```json
 {
   "id": "ThreePhaseAcMeasurement:LV3_Ventilation",
@@ -1347,4 +1349,4 @@ NGSI-LD normalized Example
     ]
 }
 ```
-El texto despuÃ©s de todo
+El texto después de todo
