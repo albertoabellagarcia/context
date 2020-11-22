@@ -20,7 +20,7 @@ test
 <p>Factor de potencia para cada fase. Los valores reales serán transmitidos por una subpropiedad por cada fase de corriente alterna: L1, L2 y L3</p>
 encabezado españa camión<p>El voltaje entre cada fase y el conductor neutro. Los valores reales serán transmitidos por una subpropiedad por cada fase de corriente alterna: L1, L2 y L3</p>
 encabezado españa camión<p>Debe ser igual a "Medición en tres fases".</p>
-and this is  **a bold text** I am afraid 
+and this is  **a bold text**  I am afraid 
 and this is  ** `a bold and monospaced text` ** I am afraid
 and this is 
 
