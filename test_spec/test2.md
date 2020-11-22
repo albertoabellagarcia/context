@@ -22,7 +22,10 @@ encabezado españa camión<p>El voltaje entre cada fase y el conductor neutro. L
 encabezado españa camión<p>Debe ser igual a "Medición en tres fases".</p>
 and this is  **a bold text** I am afraid 
 and this is  ** `a bold and monospaced text` ** I am afraid
-and this is  ```
+and this is 
+
+```
+
 languages = ["ES"]
 authKey = "e1ee24ce-f9f1-e664-27a4-82a6606bf8dc"
 for lang in languages:
@@ -34,9 +37,12 @@ for lang in languages:
         # print(chardet.detect(esSentence))
 print(mdFile)
 mdFile.create_md_file()
-``` a piece of code 
+```
+a piece of code 
 and this is 
+
 ```yaml
+
 Animal:
   description: 'An observation of animal conditions at a certain place and time. This data model has been developed for the IoF2020 UC ShareBeef by UCO and SensoWave.'
   properties:
