@@ -1,110 +1,50 @@
 
-Entity: ThreePhaseAcMeasurement
+Entity: keyPerformanceIndicator
 ===============================
   
 **Lista de propiedades**  
-**activeEnergyExport**: Energía activa exportada por fase desde la fecha de inicio de la medición. Los valores reales serán transmitidos por subpropiedades cuyos nombres serán iguales al nombre de cada una de las fases de corriente alterna: L1, L2, L3.  
-**activeEnergyImport**: Energía activa importada, es decir, consumida por fase desde la fecha de inicio de la medición. Los valores reales serán transmitidos por subpropiedades cuyos nombres serán iguales al nombre de cada una de las fases de la corriente alterna: L1, L2, L3.  
-**activePower**: Los valores reales serán transmitidos por subpropiedades cuyos nombres serán iguales al nombre de cada una de las fases de corriente alterna: L1, L2, L3.  
-**address**:   
-**alternateName**:   
-**apparentEnergyExport**: Energía aparente exportada por fase desde la fecha de inicio de la medición. Los valores reales serán transmitidos por subpropiedades cuyos nombres serán iguales al nombre de cada una de las fases de la corriente alterna: L1, L2, L3.  
-**apparentEnergyImport**: Energía aparente importada, es decir, consumida por fase desde la fecha de inicio de la medición. Los valores reales serán transmitidos por subpropiedades cuyos nombres serán iguales al nombre de cada una de las fases de la corriente alterna: L1, L2, L3.  
-**apparentPower**: Potencia aparente consumida por fase. Los valores reales serán transmitidos por subpropiedades cuyos nombres serán iguales al nombre de cada una de las fases de la corriente alterna: L1, L2, L3  
-**areaServed**:   
-**current**: Corriente eléctrica. Los valores reales serán transmitidos por una subpropiedad por fase de corriente alterna y el hilo neutro: L1, L2, L3 y N.  
-**dataProvider**:   
-**dateCreated**:   
-**dateEnergyMeteringStarted**: La fecha de inicio de la medición de la energía.  
-**dateModified**:   
-**description**:   
-**displacementPowerFactor**: Factor de potencia de desplazamiento para cada fase. La cantidad se basa en la frecuencia fundamental del sistema. Los valores reales serÃ¡n transmitidos por una subpropiedad por cada fase de corriente alterna: L1, L2 y L3  
-**frequency**: La frecuencia del circuito.  
-**id**:   
-**location**:   
-**name**:   
-**owner**:   
-**phaseToPhaseVoltage**: TensiÃ³n entre fases. Un valor para cada par de fases: fases 1 y 2 (L12), fases 2 y 3 (L32), fases 3 y 1 (L31).  
-**phaseVoltage**: El voltaje entre cada fase y el conductor neutro. Los valores reales serÃ¡n transmitidos por una subpropiedad por cada fase de corriente alterna: L1, L2 y L3  
-**powerFactor**: Factor de potencia para cada fase. Los valores reales serÃ¡n transmitidos por una subpropiedad por cada fase de corriente alterna: L1, L2 y L3  
-**reactiveEnergyExport**: Energía reactiva de frecuencia fundamental exportada por fase desde la fecha de inicio de la medición. Los valores reales serán transmitidos por subpropiedades cuyos nombres serán iguales al nombre de cada una de las fases de la corriente alterna: L1, L2, L3.  
-**reactiveEnergyImport**: Energía reactiva de frecuencia fundamental importada, es decir, consumida por fase desde la fecha de inicio de la medición. Los valores reales serán transmitidos por subpropiedades cuyos nombres serán iguales al nombre de cada una de las fases de la corriente alterna: L1, L2, L3.  
-**reactivePower**: Potencia reactiva de frecuencia fundamental. Los valores reales serán transmitidos por subpropiedades cuyos nombres serán iguales al nombre de cada una de las fases de corriente alterna: L1, L2, L3.  
-**refDevice**: Relación. Dispositivo(s) utilizado(s) para obtener la medición.  
-**refTargetDevice**: Relación. Dispositivo(s) para el que se tomó la medida.  
-**seeAlso**:   
-**source**:   
-**thdCurrent**: Distorsión armónica total de la corriente eléctrica. Los valores reales serán transmitidos por una subpropiedad por cada fase de corriente alterna: L1, L2 y L3  
-**thdVoltage**: Distorsión armónica total del voltaje para cada fase. Los valores reales serán transmitidos por una subpropiedad por cada fase de corriente alterna: L1, L2 y L3  
-**totalActiveEnergyExport**: Energía total exportada desde que comenzó la medición (desde "fecha de inicio de la medición de energía").  
-**totalActiveEnergyImport**: La energía total importada, es decir, consumida desde que comenzó la medición (desde "fecha de la medición de la energía").  
-**totalActivePower**: Potencia activa consumida (contando todas las fases)  
-**totalApparentEnergyExport**: Energía total exportada (con respecto a la potencia aparente) desde la fecha de inicio de la medición (`fechaEnergíaMediciónInicio`)  
-**totalApparentEnergyImport**: Energía total importada, es decir, consumida (con respecto a la potencia aparente) desde la fecha de inicio de la medición (`fecha de inicio de la medición de energía`)  
-**totalApparentPower**: Potencia aparente consumida (contando todas las fases).  
-**totalDisplacementPowerFactor**: Factor de potencia de desplazamiento incluyendo todas las fases. La cantidad se basa en la frecuencia fundamental del sistema  
-**totalPowerFactor**: Factor de potencia incluyendo todas las fases  
-**totalReactiveEnergyExport**: Energía reactiva de frecuencia fundamental total exportada desde que comenzó la medición (desde "fecha de la medición de energía").  
-**totalReactiveEnergyImport**: Energía total importada, es decir, consumida (con respecto a la potencia reactiva de frecuencia fundamental) desde la fecha de inicio de la medición (`fecha de inicio de la medición de energía`)  
-**totalReactivePower**: Potencia reactiva consumida (contando todas las fases)  
-**type**: Debe ser igual a "MediciÃ³n en tres fases".
-
-El texto se incluirá entre el título general y la descripción.  
-  
-Descripción global: **Una medida eléctrica de un sistema que utiliza corriente alterna trifásica.**
+`address`: La direcciÃ³n postal.  
+`aggregatedData`:  Entidad(es) y atributo(s) agregado(s) por el KPI.  
+`alternateName`: Un nombre alternativo para este artÃ­culo  
+`area`: A efectos de organización, permite añadir información geográfica textual adicional como distrito, municipio o cualquier otra pista que pueda ayudar a identificar la cobertura del KPI.  
+`areaServed`: La zona geográfica donde se presta un servicio o se ofrece un artículo.  
+`businessTarget`: A tÃ­tulo informativo, el objetivo empresarial con el que se relaciona este KPI.  
+`calculatedBy`:  La organizaciÃ³n encargada de calcular el KPI.  
+`calculationFormula`: A título informativo, la fórmula utilizada para el cálculo del indicador.  
+`calculationFrequency`: Con qué frecuencia se calcula el KPI. Valores permitidos: uno de (por hora, diario, semanal, mensual, anual, trimestral, bimensual, quincenal). O cualquier otro valor significativo para la aplicación y que no esté cubierto por la lista anterior.  
+`calculationMethod`: El método de cálculo utilizado.  
+`calculationPeriod`: El perÃ­odo de tiempo de KPI.  
+`category`: Categoría del indicador. Valores permitidos: (cuantitativos, cualitativos, adelantados, atrasados, de entrada, de proceso, de salida, prácticos, direccionales, accionables, financieros). Consulte la Wikipedia para obtener una descripción de cada una de las categorías mencionadas anteriormente. - Cualquier otro valor significativo para la aplicación y que no esté cubierto por la lista anterior.  
+`currentStanding`: La posición actual del KPI según su valor kpi. Valores permitidos: uno de (muy bueno, bueno, regular, malo, muy malo)  
+`dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  
+`dateCreated`: Sello de tiempo de creación de la entidad. Normalmente será asignado por la plataforma de almacenamiento.  
+`dateExpires`: La fecha en la que el KPI ya no serÃ¡ necesario o significativo.  
+`dateModified`: Sello de tiempo de la última modificación de la entidad. Normalmente será asignado por la plataforma de almacenamiento.  
+`dateNextCalculation`: Fecha en la que debería estar disponible un nuevo cálculo del KPI.  
+`description`: Una descripción de este artículo  
+`effectiveSince`: La fecha en la que la organización creó este KPI. Esta fecha podría ser diferente de la fecha de creación de la entidad.  
+`id`:   
+`kpiValue`:  Puede ser de cualquier tipo.  
+`location`:   
+`name`: El nombre de este artÃ­culo.  
+`organization`: OrganizaciÃ³n del sujeto evaluada por el KPI  
+`owner`: Una lista que contiene una secuencia de caracteres codificados JSON que hace referencia a los Ids Ãºnicos de los propietarios  
+`process`: Se debe definir el proceso o el producto  
+`product`: Se debe definir el proceso o el producto  
+`provider`: Proveedor del producto o servicio, si lo hay, que este KPI evalÃºa.  
+`seeAlso`:   
+`source`: Una secuencia de caracteres que da como URL la fuente original de los datos de la entidad. Se recomienda que sea el nombre de dominio completamente calificado del proveedor de la fuente, o la URL del objeto fuente.  
+`type`: Debe ser KeyPerformanceIndicator  
+`updatedAt`: Esto puede ser diferente a la última fecha de actualización del valor del KPI.
 ## Modelo de datos DescripciÃ³n de las propiedades
 
 
-```yamlOrdenados alfabÃ©ticamente
-ThreePhaseAcMeasurement:
-  description: 'An electrical  measurement from a system that uses three phase alternating current.'
+Ordenados alfabÃ©ticamente
+```yamlkeyPerformanceIndicator:
+  description: 'A Key Performance Indicator (KPI) is a type of performance measurement. KPIs evaluate the success of an organization or of a particular activity in which it engages.'
   properties:
-    activeEnergyExport:
-      description: 'Active energy exported per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.'
-      properties:
-        L1:
-          minimum: 0
-          type: number
-        L2:
-          minimum: 0
-          type: number
-        L3:
-          minimum: 0
-          type: number
-      type: Property
-      x-ngsi:
-        model: http://schema.org/StructuredValue
-        units: 'kilowatt hour (kWh)'
-    activeEnergyImport:
-      description: 'Active energy imported i.e. consumed per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.'
-      properties:
-        L1:
-          minimum: 0
-          type: number
-        L2:
-          minimum: 0
-          type: number
-        L3:
-          minimum: 0
-          type: number
-      type: Property
-      x-ngsi:
-        model: http://schema.org/StructuredValue
-        units: 'kilowatt hour (kWh)'
-    activePower:
-      description: 'The actual values will beconveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3. '
-      properties:
-        L1:
-          type: number
-        L2:
-          type: number
-        L3:
-          type: number
-      type: Property
-      x-ngsi:
-        model: http://schema.org/StructuredValue
-        units: 'watt (W).Active power consumed per phase'
     address:
+      description: 'The mailing address.'
       properties:
         addressCountry:
           type: string
@@ -120,124 +60,134 @@ ThreePhaseAcMeasurement:
           type: string
         streetAddress:
           type: string
-      type: object
+      type: Property
+    aggregatedData:
+      description: ' Entity(ies) and attribute(s) aggregated by the KPI.'
+      items:
+        properties:
+          attrs:
+            items:
+              type: string
+            minItems: 1
+            type: array
+          entityType:
+            type: string
+        type: object
+      minItems: 1
+      type: Property
     alternateName:
-      type: string
-    apparentEnergyExport:
-      description: 'Apparent energy exported per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.'
-      properties:
-        L1:
-          minimum: 0
-          type: number
-        L2:
-          minimum: 0
-          type: number
-        L3:
-          minimum: 0
-          type: number
+      description: 'An alternative name for this item'
       type: Property
-      x-ngsi:
-        model: http://schema.org/StructuredValue
-        units: 'kilovolt-ampere-hour (kVAh)'
-    apparentEnergyImport:
-      description: 'Apparent energy imported i.e. consumed per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.'
-      properties:
-        L1:
-          minimum: 0
-          type: number
-        L2:
-          minimum: 0
-          type: number
-        L3:
-          minimum: 0
-          type: number
+    area:
+      description: 'For organizational purposes, it allows to add extra textual geographical information such as district, borough, or any other hint which can help to identify the KPI coverage.'
       type: Property
-      x-ngsi:
-        model: http://schema.org/StructuredValue
-        units: 'kilovolt-ampere-hour (kVAh)'
-    apparentPower:
-      description: 'Apparent power consumed per phase. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3'
-      properties:
-        L1:
-          minimum: 0
-          type: number
-        L2:
-          minimum: 0
-          type: number
-        L3:
-          minimum: 0
-          type: number
-      type: Property
-      x-ngsi:
-        model: http://schema.org/StructuredValue
-        units: 'volt-ampere (VA)'
     areaServed:
-      type: string
-    current:
-      description: 'Electrical current. The actual values will be conveyed by one subproperty per alternating current phase and the neutral wire: L1, L2, L3 and N.'
-      properties:
-        L1:
-          type: number
-        L2:
-          type: number
-        L3:
-          type: number
-        N:
-          type: number
+      description: 'The geographic area where a service or offered item is provided.'
       type: Property
-      x-ngsi:
-        model: http://schema.org/StructuredValue
-        units: 'Ampers (A)'
+    businessTarget:
+      description: 'For informative purposes, the business target to which this KPI is related to.'
+      type: Property
+    calculatedBy:
+      description: ' The organization in charge of calculating the KPI.'
+      type: Property
+    calculationFormula:
+      description: 'For informative purposes, the formula used for calculating the indicator.'
+      type: Property
+    calculationFrequency:
+      description: 'How often the KPI is calculated. Allowed values: one Of (hourly, daily, weekly, monthly, yearly, quarterly, bimonthly, biweekly). Or any other value meaningful for the application and not covered by the above list.'
+      enum:
+        - hourly
+        - daily
+        - weekly
+        - monthly
+        - yearly
+        - quarterly
+        - bimonthly
+        - biweekly
+      type: Property
+    calculationMethod:
+      description: 'The calculation method used.'
+      enum:
+        - manual
+        - automatic
+        - semiautomatic
+      type: Property
+    calculationPeriod:
+      description: 'KPI''s period of time.'
+      properties:
+        from:
+          format: date
+          type: string
+        to:
+          format: date
+          type: string
+      type: Property
+    category:
+      description: 'Indicator category. Allowed values: (quantitative, qualitative, leading, lagging, input, process, output, practical, directional, actionable, financial). Check Wikipedia for a description of each category listed above. - Any other value meaningful to the application and not covered by the above list.'
+      items:
+        enum:
+          - quantitative
+          - qualitative
+          - leading
+          - lagging
+          - input
+          - process
+          - output
+          - practical
+          - directional
+          - actionable
+          - financial
+        type: string
+      minItems: 1
+      type: Property
+    currentStanding:
+      description: 'The KPI''s current standing as per its kpiValue. Allowed values: one Of (very good, good, fair, bad, very bad)'
+      enum:
+        - veryGood
+        - good
+        - fair
+        - bad
+        - veryBad
+      type: Property
     dataProvider:
-      type: string
+      description: 'A sequence of characters identifying the provider of the harmonised data entity.'
+      type: Property
     dateCreated:
-      format: date-time
-      type: string
-    dateEnergyMeteringStarted:
-      description: 'The starting date for metering energy.'
+      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'
       format: date-time
       type: Property
-      x-ngsi:
-        model: http://schema.org/DateTime
+    dateExpires:
+      description: 'The date on which the KPI will be no longer necessary or meaningful.'
+      format: date-time
+      type: Property
     dateModified:
+      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'
       format: date-time
-      type: string
+      type: Property
+    dateNextCalculation:
+      description: 'Date on which a new calculation of the KPI should be available.'
+      format: date
+      type: Property
     description:
-      type: string
-    displacementPowerFactor:
-      description: 'Displacement power factor for each phase. The quantity is based on the fundamental frequency of the system. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3'
-      properties:
-        L1:
-          maximum: 1
-          minimum: -1
-          type: number
-        L2:
-          maximum: 1
-          minimum: -1
-          type: number
-        L3:
-          maximum: 1
-          minimum: -1
-          type: number
+      description: 'A description of this item'
       type: Property
-      x-ngsi:
-        model: http://schema.org/StructuredValue
-        units: '-1 to +1'
-    frequency:
-      description: 'The frequency of the circuit.'
-      minimum: 0
+    effectiveSince:
+      description: 'The date on which the organization created this KPI. This date might be different than the entity creation date.'
+      format: date-time
       type: Property
-      x-ngsi:
-        model: http://schema.org/Number
-        units: 'Hertz (Hz)'
     id:
-      anyOf: &threephaseacmeasurement_-_properties_-_owner_-_items_-_anyof
-        - maxLength: 256
+      anyOf: &keyperformanceindicator_-_properties_-_owner_-_items_-_anyof
+        - description: 'Property. Identifier format of any NGSI entity'
+          maxLength: 256
           minLength: 1
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
           type: string
-        - format: uri
+        - description: 'Property. Identifier format of any NGSI entity'
+          format: uri
           type: string
+    kpiValue:
+      description: ' It can be of any type.'
+      type: Property
     location:
       $id: https://geojson.org/schema/Geometry.json
       $schema: "http://json-schema.org/draft-07/schema#"
@@ -386,121 +336,29 @@ ThreePhaseAcMeasurement:
           type: object
       title: 'GeoJSON Geometry'
     name:
-      type: string
+      description: 'The name of this item.'
+      type: Property
+    organization:
+      description: 'Subject organization evaluated by the KPI'
+      type: Property
+      x-ngsi:
+        model: ' https://schema.org/organization'
     owner:
+      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
       items:
-        anyOf: *threephaseacmeasurement_-_properties_-_owner_-_items_-_anyof
-      type: array
-    phaseToPhaseVoltage:
-      description: 'Voltage between phases. A value for each phase pair: phases 1 and 2 (L12), phases 2 and 3 (L32), phases 3 and 1 (L31).'
-      properties:
-        L12:
-          minimum: 0
-          type: number
-        L23:
-          minimum: 0
-          type: number
-        L31:
-          minimum: 0
-          type: number
+        anyOf: *keyperformanceindicator_-_properties_-_owner_-_items_-_anyof
+      type: Property
+    process:
+      description: 'Either process or product must be defined'
+      type: Property
+    product:
+      description: 'Either process or product must be defined'
+      type: Property
+    provider:
+      description: 'Provider of the product or service, if any, that this KPI evaluates.'
       type: Property
       x-ngsi:
-        model: (http://schema.org/StructuredValue
-        units: 'Volts (V)'
-    phaseVoltage:
-      description: 'The voltage between each phase and neutral conductor. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3'
-      properties:
-        L1:
-          minimum: 0
-          type: number
-        L2:
-          minimum: 0
-          type: number
-        L3:
-          minimum: 0
-          type: number
-      type: Property
-      x-ngsi:
-        model: http://schema.org/StructuredValue
-        units: 'Volts (V)'
-    powerFactor:
-      description: 'Power factor for each phase. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3'
-      properties:
-        L1:
-          maximum: 1
-          minimum: -1
-          type: number
-        L2:
-          maximum: 1
-          minimum: -1
-          type: number
-        L3:
-          maximum: 1
-          minimum: -1
-          type: number
-      type: Property
-      x-ngsi:
-        model: http://schema.org/StructuredValue
-        units: '-1 to +1'
-    reactiveEnergyExport:
-      description: 'Fundamental frequency reactive energy exported per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.'
-      properties:
-        L1:
-          minimum: 0
-          type: number
-        L2:
-          minimum: 0
-          type: number
-        L3:
-          minimum: 0
-          type: number
-      type: Property
-      x-ngsi:
-        model: http://schema.org/StructuredValue
-        units: 'kilovolt-ampere-reactive-hour (kVArh)'
-    reactiveEnergyImport:
-      description: 'Fundamental frequency reactive energy imported i.e. consumed per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.'
-      properties:
-        L1:
-          minimum: 0
-          type: number
-        L2:
-          minimum: 0
-          type: number
-        L3:
-          minimum: 0
-          type: number
-      type: Property
-      x-ngsi:
-        model: 'kilovolt-ampere-reactive-hour (kVArh)'
-        units: http://schema.org/StructuredValue
-    reactivePower:
-      description: 'Fundamental frequency reactive power. The actual values will be conveyed by subproperties whose names will be equal to the name of each of the alternating current phases: L1, L2, L3.'
-      properties:
-        L1:
-          type: number
-        L2:
-          type: number
-        L3:
-          type: number
-      type: Property
-      x-ngsi:
-        model: http://schema.org/StructuredValue
-        units: 'volts-ampere-reactive (VAr)'
-    refDevice:
-      description: 'Relationship. Device(s) used to obtain the measurement.'
-      items:
-        anyOf: *threephaseacmeasurement_-_properties_-_owner_-_items_-_anyof
-      minItems: 1
-      type: array
-      uniqueItems: true
-    refTargetDevice:
-      description: 'Relationship. Device(s) for which the measurement was taken.'
-      items:
-        anyOf: *threephaseacmeasurement_-_properties_-_owner_-_items_-_anyof
-      minItems: 1
-      type: array
-      uniqueItems: true
+        model: https://schema.org/provider
     seeAlso:
       oneOf:
         - items:
@@ -511,842 +369,214 @@ ThreePhaseAcMeasurement:
         - format: uri
           type: string
     source:
-      type: string
-    thdCurrent:
-      description: 'Total harmonic distortion of electrical current. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3'
-      properties:
-        L1:
-          maximum: 1
-          minimum: 0
-          type: number
-        L2:
-          maximum: 1
-          minimum: 0
-          type: number
-        L3:
-          maximum: 1
-          minimum: 0
-          type: number
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'
       type: Property
-      x-ngsi:
-        model: http://schema.org/StructuredValue
-        units: '0 to 1'
-    thdVoltage:
-      description: 'Total harmonic distortion of voltage for each phase. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3'
-      properties:
-        L1:
-          maximum: 1
-          minimum: 0
-          type: number
-        L2:
-          maximum: 1
-          minimum: 0
-          type: number
-        L3:
-          maximum: 1
-          minimum: 0
-          type: number
-      type: Property
-      x-ngsi:
-        model: http://schema.org/StructuredValue
-        units: '0 to 1'
-    totalActiveEnergyExport:
-      description: 'Total energy exported since metering started (since `dateEnergyMeteringStarted`).'
-      minimum: 0
-      type: Property
-      x-ngsi:
-        model: https://schema.org/Number
-        units: 'kilowatt hour (kWh)'
-    totalActiveEnergyImport:
-      description: 'Total energy imported i.e. consumed since metering started (since `dateEnergyMeteringStarted`).'
-      minimum: 0
-      type: Property
-      x-ngsi:
-        model: https://schema.org/Number
-        units: 'kilowatt hour (kWh)'
-    totalActivePower:
-      description: 'Active power consumed (counting all phases)'
-      type: Property
-      x-ngsi:
-        model: http://schema.org/Number
-        units: 'watt (W)'
-    totalApparentEnergyExport:
-      description: 'Total energy exported (with regards to apparent power) since the metering start date (`dateEnergyMeteringStarted`)'
-      minimum: 0
-      type: Property
-      x-ngsi:
-        model: https://schema.org/Number
-        units: 'kilovolt-ampere-reactive-hour (kVArh)'
-    totalApparentEnergyImport:
-      description: 'Total energy imported i.e. consumed (with regards to apparent power) since the metering start date (`dateEnergyMeteringStarted`)'
-      minimum: 0
-      type: Property
-      x-ngsi:
-        model: https://schema.org/Number
-        units: 'kilovolt-ampere-hour (kVAh)'
-    totalApparentPower:
-      description: 'Apparent power consumed (counting all phases).'
-      minimum: 0
-      type: Property
-      x-ngsi:
-        model: http://schema.org/Number
-        units: 'volt-ampere (VA)'
-    totalDisplacementPowerFactor:
-      description: 'Displacement power factor including all phases. The quantity is based on the fundamental frequency of the system'
-      maximum: 1
-      minimum: -1
-      type: Property
-      x-ngsi:
-        model: http://schema.org/Number
-        units: '-1 to +1'
-    totalPowerFactor:
-      description: 'Power factor including all phases'
-      maximum: 1
-      minimum: -1
-      type: Property
-      x-ngsi:
-        model: http://schema.org/Number
-        units: '-1 to +1'
-    totalReactiveEnergyExport:
-      description: 'Total fundamental frequency reactive energy exported since metering started (since `dateEnergyMeteringStarted`).'
-      minimum: 0
-      type: Property
-      x-ngsi:
-        model: https://schema.org/Number
-        units: 'kilovolt-ampere-reactive-hour (kVArh)'
-    totalReactiveEnergyImport:
-      description: 'Total energy imported i.e. consumed (with regards to fundamental frequency reactive power) since the metering start date (`dateEnergyMeteringStarted`)'
-      minimum: 0
-      type: Property
-      x-ngsi:
-        model: https://schema.org/Number
-        units: 'kilovolt-ampere-reactive-hour (kVArh)'
-    totalReactivePower:
-      description: 'Reactive power consumed (counting all phases)'
-      type: Property
-      x-ngsi:
-        model: http://schema.org/Number
-        units: 'volt-ampere-reactive (VAr)'
     type:
-      description: 'It must be equal to `ThreePhaseAcMeasurement`.'
+      description: 'It must be KeyPerformanceIndicator'
       enum:
-        - ThreePhaseAcMeasurement
+        - KeyPerformanceIndicator
       type: Property
+    updatedAt:
+      description: 'This can be different than the last update date of the KPI''s value.'
+      format: date-time
+      type: 'Property.Last update date of the KPI data'
   required:
     - id
     - type
   type: object
-El texto se incluirá después de la lista de propiedades
-```
-
-## Examples
-NGSI V2 key-values Example
+Here is an example of a keyPerformanceIndicator in JSON format as key-values. This is compatible with NGSI V2 when  using `options=keyValues` and returns the context data of an individual entity.
 ```json
 {
-  "id": "ThreePhaseAcMeasurement:LV3_Ventilation",
-  "type": "ThreePhaseAcMeasurement",
-  "dateEnergyMeteringStarted": "2018-07-07T15:05:59.408Z",
-  "refDevice": ["Device:eQL-EDF3GL-2006201705"],
-  "name": "HKAPK0200",
-  "description": "measurement corresponding to the ventilation machine rooms",
-  "totalActiveEnergyImport": 150781.96448,
-  "totalReactiveEnergyImport": 20490.3392,
-  "totalActiveEnergyExport": 1059.80176,
-  "totalReactiveEnergyExport": 93275.02176,
-  "totalActivePower": 31700.269531,
-  "activePower": {
-    "L1": 11996.416016,
-    "L2": 9461.501953,
-    "L3": 10242.351562
+  "id": "kpi-2016-Ciudad-containers-faults",
+  "type": "KeyPerformanceIndicator",
+  "name": "Incidencias-Contenedores-Mensual",
+  "description": "Number of incidences raised on containers per month",
+  "category": ["quantitative"],
+  "organization": {
+    "name": "Ayuntamiento de Ciudad"
   },
-  "totalReactivePower": -7830.332031,
-  "reactivePower": {
-    "L1": -2612.606934,
-    "L2": -2209.906006,
-    "L3": -3007.81958
+  "provider": {
+    "name": "Cleaning Service Provider S.A."
   },
-  "totalApparentPower": 36019.089844,
-  "apparentPower": {
-    "L1": 13201.412109,
-    "L2": 10755.304688,
-    "L3": 11941.094727
+  "kpiValue": 20,
+  "currentStanding": "good",
+  "calculationPeriod": {
+    "from": "2016-06-01",
+    "to": "2016-06-30"
   },
-  "powerFactor": {
-    "L1": 0.908817,
-    "L2": 0.879906,
-    "L3": 0.859293
+  "calculationMethod": "automatic",
+  "calculationFrequency": "monthly",
+  "dateModified": "2016-06-29T15:59:09.224Z",
+  "dateNextCalculation": "2016-07-31",
+  "address": {
+    "addressLocality": "Ciudad",
+    "addressCountry": "ESP"
   },
-  "displacementPowerFactor": {
-    "L1": 0.978013,
-    "L2": 0.973317,
-    "L3": 0.960382
-  },
-  "frequency": 50.020672,
-  "current": {
-    "L1": 56.126038,
-    "L2": 45.894356,
-    "L3": 50.872452,
-    "N": 0.0
-  },
-  "phaseVoltage": {
-    "L1": 234.961304,
-    "L2": 234.563477,
-    "L3": 235.354034
-  },
-  "phaseToPhaseVoltage": {
-    "L12": 406.769196,
-    "L23": 407.081238,
-    "L31": 407.734558
-  },
-  "thdVoltage": {
-    "L1": 0.01471114,
-    "L2": 0.01600046,
-    "L3": 0.01541459
-  },
-  "thdCurrent": {
-    "L1": 0.38497337,
-    "L2": 0.45807529,
-    "L3": 0.4938652
-  }
+  "process": "Garbage Collection"
 }
 ```
-NGSI V2 normalized Example
+Here is an example of a keyPerformanceIndicator in JSON format as normalized. This is compatible with NGSI V2 when  using `options=keyValues` and returns the context data of an individual entity.
 ```json
 {
-  "id": "ThreePhaseAcMeasurement:LV3_Ventilation",
-  "type": "ThreePhaseAcMeasurement",
-  "dateEnergyMeteringStarted": {
+  "id": "kpi-2016-Ciudad-containers-faults",
+  "type": "KeyPerformanceIndicator",
+  "category": {
+    "value": ["quantitative"]
+  },
+  "dateModified": {
     "type": "DateTime",
-    "value": "2018-07-07T15:05:59.408Z"
+    "value": "2016-06-29T15:59:09.224Z"
   },
-  "refDevice": {
-    "type": "Relationship",
-    "value": ["Device:eQL-EDF3GL-2006201705"]
-  },
-  "name": {
-    "value": "HKAPK0200"
+  "calculationFrequency": {
+    "value": "monthly"
   },
   "description": {
-    "value": "measurement corresponding to the ventilation machine rooms"
+    "value": "Number of incidences raised on containers per month"
   },
-  "totalActiveEnergyImport": {
-    "metadata": {
-      "timestamp": {
-        "type": "DateTime",
-        "value": "2019-01-24T22:00:00.173Z"
-      }
-    },
-    "value": 150781.96448
+  "currentStanding": {
+    "value": "good"
   },
-  "totalReactiveEnergyImport": {
-    "metadata": {
-      "timestamp": {
-        "type": "DateTime",
-        "value": "2019-01-24T22:00:00.173Z"
-      }
-    },
-    "value": 20490.3392
-  },
-  "totalActiveEnergyExport": {
-    "metadata": {
-      "timestamp": {
-        "type": "DateTime",
-        "value": "2019-01-24T22:00:00.173Z"
-      }
-    },
-    "value": 1059.80176
-  },
-  "totalReactiveEnergyExport": {
-    "metadata": {
-      "timestamp": {
-        "type": "DateTime",
-        "value": "2019-01-24T22:00:00.173Z"
-      }
-    },
-    "value": 93275.02176
-  },
-  "totalActivePower": {
-    "metadata": {
-      "timestamp": {
-        "type": "DateTime",
-        "value": "2019-01-24T22:00:00.173Z"
-      },
-      "measurementType": {
-        "value": "average"
-      },
-      "measurementInterval": {
-        "value": 1
-      }
-    },
-    "value": 31700.269531
-  },
-  "activePower": {
-    "metadata": {
-      "timestamp": {
-        "type": "DateTime",
-        "value": "2019-01-24T22:00:00.173Z"
-      },
-      "measurementType": {
-        "value": "average"
-      },
-      "measurementInterval": {
-        "value": 1
-      }
-    },
-    "type": "StructuredValue",
+  "address": {
+    "type": "PostalAddress",
     "value": {
-      "L1": 11996.416016,
-      "L2": 9461.501953,
-      "L3": 10242.351562
+      "addressLocality": "Ciudad",
+      "addressCountry": "ESP"
     }
   },
-  "totalReactivePower": {
-    "metadata": {
-      "timestamp": {
-        "type": "DateTime",
-        "value": "2019-01-24T22:00:00.173Z"
-      },
-      "measurementType": {
-        "value": "average"
-      },
-      "measurementInterval": {
-        "value": 1
-      }
-    },
-    "value": -7830.332031
-  },
-  "reactivePower": {
-    "metadata": {
-      "timestamp": {
-        "type": "DateTime",
-        "value": "2019-01-24T22:00:00.173Z"
-      },
-      "measurementType": {
-        "value": "average"
-      },
-      "measurementInterval": {
-        "value": 1
-      }
-    },
-    "type": "StructuredValue",
+  "calculationPeriod": {
     "value": {
-      "L1": -2612.606934,
-      "L2": -2209.906006,
-      "L3": -3007.81958
+      "to": "2016-06-30",
+      "from": "2016-06-01"
     }
   },
-  "totalApparentPower": {
-    "metadata": {
-      "timestamp": {
-        "type": "DateTime",
-        "value": "2019-01-24T22:00:00.173Z"
-      },
-      "measurementType": {
-        "value": "average"
-      },
-      "measurementInterval": {
-        "value": 1
-      }
-    },
-    "value": 36019.089844
+  "dateNextCalculation": {
+    "type": "DateTime",
+    "value": "2016-07-31"
   },
-  "apparentPower": {
-    "metadata": {
-      "timestamp": {
-        "type": "DateTime",
-        "value": "2019-01-24T22:00:00.173Z"
-      },
-      "measurementType": {
-        "value": "average"
-      },
-      "measurementInterval": {
-        "value": 1
-      }
-    },
-    "type": "StructuredValue",
+  "calculationMethod": {
+    "value": "automatic"
+  },
+  "provider": {
     "value": {
-      "L1": 13201.412109,
-      "L2": 10755.304688,
-      "L3": 11941.094727
+      "name": "Cleaning Service Provider S.A."
     }
   },
-  "powerFactor": {
-    "metadata": {
-      "timestamp": {
-        "type": "DateTime",
-        "value": "2019-01-24T22:00:00.173Z"
-      },
-      "measurementType": {
-        "value": "average"
-      },
-      "measurementInterval": {
-        "value": 1
-      },
-      "onlyPositive": {
-        "value": true
-      }
-    },
-    "type": "StructuredValue",
+  "organization": {
     "value": {
-      "L1": 0.908817,
-      "L2": 0.879906,
-      "L3": 0.859293
+      "name": "Ayuntamiento de Ciudad"
     }
   },
-  "displacementPowerFactor": {
-    "metadata": {
-      "timestamp": {
-        "type": "DateTime",
-        "value": "2019-01-24T22:00:00.173Z"
-      },
-      "measurementType": {
-        "value": "average"
-      },
-      "measurementInterval": {
-        "value": 1
-      },
-      "onlyPositive": {
-        "value": true
-      }
-    },
-    "type": "StructuredValue",
-    "value": {
-      "L1": 0.978013,
-      "L2": 0.973317,
-      "L3": 0.960382
-    }
+  "kpiValue": {
+    "value": 20
   },
-  "frequency": {
-    "metadata": {
-      "timestamp": {
-        "type": "DateTime",
-        "value": "2019-01-24T22:00:00.173Z"
-      },
-      "measurementType": {
-        "value": "average"
-      },
-      "measurementInterval": {
-        "value": 1
-      }
-    },
-    "value": 50.020672
+  "name": {
+    "value": "Incidencias-Contenedores-Mensual"
   },
-  "current": {
-    "metadata": {
-      "timestamp": {
-        "type": "DateTime",
-        "value": "2019-01-24T22:00:00.173Z"
-      },
-      "measurementType": {
-        "value": "rms"
-      },
-      "measurementInterval": {
-        "value": 1
-      }
-    },
-    "type": "StructuredValue",
-    "value": {
-      "L1": 56.126038,
-      "L2": 45.894356,
-      "L3": 50.872452,
-      "N": 0.0
-    }
-  },
-  "phaseVoltage": {
-    "metadata": {
-      "timestamp": {
-        "type": "DateTime",
-        "value": "2019-01-24T22:00:00.173Z"
-      },
-      "measurementType": {
-        "value": "rms"
-      },
-      "measurementInterval": {
-        "value": 1
-      }
-    },
-    "type": "StructuredValue",
-    "value": {
-      "L1": 234.961304,
-      "L2": 234.563477,
-      "L3": 235.354034
-    }
-  },
-  "phaseToPhaseVoltage": {
-    "metadata": {
-      "timestamp": {
-        "type": "DateTime",
-        "value": "2019-01-24T22:00:00.173Z"
-      },
-      "measurementType": {
-        "value": "rms"
-      },
-      "measurementInterval": {
-        "value": 1
-      }
-    },
-    "type": "StructuredValue",
-    "value": {
-      "L12": 406.769196,
-      "L23": 407.081238,
-      "L31": 407.734558
-    }
-  },
-  "thdVoltage": {
-    "metadata": {
-      "timestamp": {
-        "type": "DateTime",
-        "value": "2019-01-24T22:00:00.173Z"
-      },
-      "measurementType": {
-        "value": "average"
-      },
-      "measurementInterval": {
-        "value": 1
-      }
-    },
-    "type": "StructuredValue",
-    "value": {
-      "L1": 0.01471114,
-      "L2": 0.01600046,
-      "L3": 0.01541459
-    }
-  },
-  "thdCurrent": {
-    "metadata": {
-      "timestamp": {
-        "type": "DateTime",
-        "value": "2019-01-24T22:00:00.173Z"
-      },
-      "measurementType": {
-        "value": "average"
-      },
-      "measurementInterval": {
-        "value": 1
-      }
-    },
-    "type": "StructuredValue",
-    "value": {
-      "L1": 0.38497337,
-      "L2": 0.45807529,
-      "L3": 0.4938652
-    }
+  "process": {
+    "value": "Garbage Collection"
   }
 }
 ```
-NGSI-LD key-values Example
+Here is an example of a keyPerformanceIndicator in JSON-LD format as key-values. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.
 ```json
-{"@context": ["https://schema.lab.fiware.org/ld/context",
+{"@context": ["https://smart-data-models.github.io/data-models/context.jsonld",
               "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"],
- "activePower": {"L1": 11996.416016, "L2": 9461.501953, "L3": 10242.351562},
- "apparentPower": {"L1": 13201.412109, "L2": 10755.304688, "L3": 11941.094727},
- "current": {"L1": 56.126038, "L2": 45.894356, "L3": 50.872452, "N": 0.0},
- "dateEnergyMeteringStarted": {"@type": "DateTime",
-                               "@value": "2018-07-07T15:05:59.408Z"},
- "description": "measurement corresponding to the ventilation machine rooms",
- "displacementPowerFactor": {"L1": 0.978013, "L2": 0.973317, "L3": 0.960382},
- "frequency": 50.020672,
- "id": "urn:ngsi-ld:ThreePhaseAcMeasurement:ThreePhaseAcMeasurement:LV3_Ventilation",
- "name": "HKAPK0200",
- "phaseToPhaseVoltage": {"L12": 406.769196,
-                         "L23": 407.081238,
-                         "L31": 407.734558},
- "phaseVoltage": {"L1": 234.961304, "L2": 234.563477, "L3": 235.354034},
- "powerFactor": {"L1": 0.908817, "L2": 0.879906, "L3": 0.859293},
- "reactivePower": {"L1": -2612.606934, "L2": -2209.906006, "L3": -3007.81958},
- "refDevice": ["urn:ngsi-ld:Device:Device:eQL-EDF3GL-2006201705"],
- "thdCurrent": {"L1": 0.38497337, "L2": 0.45807529, "L3": 0.4938652},
- "thdVoltage": {"L1": 0.01471114, "L2": 0.01600046, "L3": 0.01541459},
- "totalActiveEnergyExport": 1059.80176,
- "totalActiveEnergyImport": 150781.96448,
- "totalActivePower": 31700.269531,
- "totalApparentPower": 36019.089844,
- "totalReactiveEnergyExport": 93275.02176,
- "totalReactiveEnergyImport": 20490.3392,
- "totalReactivePower": -7830.332031,
- "type": "ThreePhaseAcMeasurement"}
+ "address": {"addressCountry": "ESP",
+             "addressLocality": "Ciudad",
+             "type": "PostalAddress"},
+ "calculationFrequency": "monthly",
+ "calculationMethod": "automatic",
+ "calculationPeriod": {"from": "2016-06-01", "to": "2016-06-30"},
+ "category": ["quantitative"],
+ "currentStanding": "good",
+ "dateNextCalculation": {"@type": "DateTime", "@value": "2016-07-31Z"},
+ "description": "Number of incidences raised on containers per month",
+ "id": "urn:ngsi-ld:KeyPerformanceIndicator:kpi-2016-Ciudad-containers-faults",
+ "kpiValue": 20,
+ "modifiedAt": "2016-06-29T15:59:09.224Z",
+ "name": "Incidencias-Contenedores-Mensual",
+ "organization": {"name": "Ayuntamiento de Ciudad"},
+ "process": "Garbage Collection",
+ "provider": {"name": "Cleaning Service Provider S.A."},
+ "type": "KeyPerformanceIndicator"}
 ```
-NGSI-LD normalized Example
+Here is an example of a keyPerformanceIndicator in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.
 ```json
 {
-    "id": "urn:ngsi-ld:ThreePhaseAcMeasurement:ThreePhaseAcMeasurement:LV3_Ventilation",
-    "type": "ThreePhaseAcMeasurement",
-    "dateEnergyMeteringStarted": {
+    "id": "urn:ngsi-ld:KeyPerformanceIndicator:kpi-2016-Ciudad-containers-faults",
+    "type": "KeyPerformanceIndicator",
+    "modifiedAt": "2016-06-29T15:59:09.224Z",
+    "category": {
         "type": "Property",
-        "value": {
-            "@type": "DateTime",
-            "@value": "2018-07-07T15:05:59.408Z"
-        }
-    },
-    "refDevice": {
-        "type": "Relationship",
-        "object": [
-            "urn:ngsi-ld:Device:Device:eQL-EDF3GL-2006201705"
+        "value": [
+            "quantitative"
         ]
     },
-    "name": {
+    "calculationFrequency": {
         "type": "Property",
-        "value": "HKAPK0200"
+        "value": "monthly"
     },
     "description": {
         "type": "Property",
-        "value": "measurement corresponding to the ventilation machine rooms"
+        "value": "Number of incidences raised on containers per month"
     },
-    "totalActiveEnergyImport": {
+    "currentStanding": {
         "type": "Property",
-        "value": 150781.96448,
-        "observedAt": "2019-01-24T22:00:00.173Z"
+        "value": "good"
     },
-    "totalReactiveEnergyImport": {
-        "type": "Property",
-        "value": 20490.3392,
-        "observedAt": "2019-01-24T22:00:00.173Z"
-    },
-    "totalActiveEnergyExport": {
-        "type": "Property",
-        "value": 1059.80176,
-        "observedAt": "2019-01-24T22:00:00.173Z"
-    },
-    "totalReactiveEnergyExport": {
-        "type": "Property",
-        "value": 93275.02176,
-        "observedAt": "2019-01-24T22:00:00.173Z"
-    },
-    "totalActivePower": {
-        "type": "Property",
-        "value": 31700.269531,
-        "observedAt": "2019-01-24T22:00:00.173Z",
-        "measurementType": {
-            "type": "Property",
-            "value": "average"
-        },
-        "measurementInterval": {
-            "type": "Property",
-            "value": 1
-        }
-    },
-    "activePower": {
+    "address": {
         "type": "Property",
         "value": {
-            "L1": 11996.416016,
-            "L2": 9461.501953,
-            "L3": 10242.351562
-        },
-        "observedAt": "2019-01-24T22:00:00.173Z",
-        "measurementType": {
-            "type": "Property",
-            "value": "average"
-        },
-        "measurementInterval": {
-            "type": "Property",
-            "value": 1
+            "addressLocality": "Ciudad",
+            "addressCountry": "ESP",
+            "type": "PostalAddress"
         }
     },
-    "totalReactivePower": {
-        "type": "Property",
-        "value": -7830.332031,
-        "observedAt": "2019-01-24T22:00:00.173Z",
-        "measurementType": {
-            "type": "Property",
-            "value": "average"
-        },
-        "measurementInterval": {
-            "type": "Property",
-            "value": 1
-        }
-    },
-    "reactivePower": {
+    "calculationPeriod": {
         "type": "Property",
         "value": {
-            "L1": -2612.606934,
-            "L2": -2209.906006,
-            "L3": -3007.81958
-        },
-        "observedAt": "2019-01-24T22:00:00.173Z",
-        "measurementType": {
-            "type": "Property",
-            "value": "average"
-        },
-        "measurementInterval": {
-            "type": "Property",
-            "value": 1
+            "to": "2016-06-30",
+            "from": "2016-06-01"
         }
     },
-    "totalApparentPower": {
-        "type": "Property",
-        "value": 36019.089844,
-        "observedAt": "2019-01-24T22:00:00.173Z",
-        "measurementType": {
-            "type": "Property",
-            "value": "average"
-        },
-        "measurementInterval": {
-            "type": "Property",
-            "value": 1
-        }
-    },
-    "apparentPower": {
+    "dateNextCalculation": {
         "type": "Property",
         "value": {
-            "L1": 13201.412109,
-            "L2": 10755.304688,
-            "L3": 11941.094727
-        },
-        "observedAt": "2019-01-24T22:00:00.173Z",
-        "measurementType": {
-            "type": "Property",
-            "value": "average"
-        },
-        "measurementInterval": {
-            "type": "Property",
-            "value": 1
+            "@type": "DateTime",
+            "@value": "2016-07-31Z"
         }
     },
-    "powerFactor": {
+    "calculationMethod": {
+        "type": "Property",
+        "value": "automatic"
+    },
+    "provider": {
         "type": "Property",
         "value": {
-            "L1": 0.908817,
-            "L2": 0.879906,
-            "L3": 0.859293
-        },
-        "observedAt": "2019-01-24T22:00:00.173Z",
-        "measurementType": {
-            "type": "Property",
-            "value": "average"
-        },
-        "measurementInterval": {
-            "type": "Property",
-            "value": 1
-        },
-        "onlyPositive": {
-            "type": "Property",
-            "value": true
+            "name": "Cleaning Service Provider S.A."
         }
     },
-    "displacementPowerFactor": {
+    "organization": {
         "type": "Property",
         "value": {
-            "L1": 0.978013,
-            "L2": 0.973317,
-            "L3": 0.960382
-        },
-        "observedAt": "2019-01-24T22:00:00.173Z",
-        "measurementType": {
-            "type": "Property",
-            "value": "average"
-        },
-        "measurementInterval": {
-            "type": "Property",
-            "value": 1
-        },
-        "onlyPositive": {
-            "type": "Property",
-            "value": true
+            "name": "Ayuntamiento de Ciudad"
         }
     },
-    "frequency": {
+    "kpiValue": {
         "type": "Property",
-        "value": 50.020672,
-        "observedAt": "2019-01-24T22:00:00.173Z",
-        "measurementType": {
-            "type": "Property",
-            "value": "average"
-        },
-        "measurementInterval": {
-            "type": "Property",
-            "value": 1
-        }
+        "value": 20
     },
-    "current": {
+    "name": {
         "type": "Property",
-        "value": {
-            "L1": 56.126038,
-            "L2": 45.894356,
-            "L3": 50.872452,
-            "N": 0.0
-        },
-        "observedAt": "2019-01-24T22:00:00.173Z",
-        "measurementType": {
-            "type": "Property",
-            "value": "rms"
-        },
-        "measurementInterval": {
-            "type": "Property",
-            "value": 1
-        }
+        "value": "Incidencias-Contenedores-Mensual"
     },
-    "phaseVoltage": {
+    "process": {
         "type": "Property",
-        "value": {
-            "L1": 234.961304,
-            "L2": 234.563477,
-            "L3": 235.354034
-        },
-        "observedAt": "2019-01-24T22:00:00.173Z",
-        "measurementType": {
-            "type": "Property",
-            "value": "rms"
-        },
-        "measurementInterval": {
-            "type": "Property",
-            "value": 1
-        }
-    },
-    "phaseToPhaseVoltage": {
-        "type": "Property",
-        "value": {
-            "L12": 406.769196,
-            "L23": 407.081238,
-            "L31": 407.734558
-        },
-        "observedAt": "2019-01-24T22:00:00.173Z",
-        "measurementType": {
-            "type": "Property",
-            "value": "rms"
-        },
-        "measurementInterval": {
-            "type": "Property",
-            "value": 1
-        }
-    },
-    "thdVoltage": {
-        "type": "Property",
-        "value": {
-            "L1": 0.01471114,
-            "L2": 0.01600046,
-            "L3": 0.01541459
-        },
-        "observedAt": "2019-01-24T22:00:00.173Z",
-        "measurementType": {
-            "type": "Property",
-            "value": "average"
-        },
-        "measurementInterval": {
-            "type": "Property",
-            "value": 1
-        }
-    },
-    "thdCurrent": {
-        "type": "Property",
-        "value": {
-            "L1": 0.38497337,
-            "L2": 0.45807529,
-            "L3": 0.4938652
-        },
-        "observedAt": "2019-01-24T22:00:00.173Z",
-        "measurementType": {
-            "type": "Property",
-            "value": "average"
-        },
-        "measurementInterval": {
-            "type": "Property",
-            "value": 1
-        }
+        "value": "Garbage Collection"
     },
     "@context": [
-        "https://schema.lab.fiware.org/ld/context",
+        "https://smart-data-models.github.io/data-models/context.jsonld",
         "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
     ]
 }
 ```
-El texto después de todo
