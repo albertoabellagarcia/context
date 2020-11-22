@@ -37,7 +37,6 @@ mdFile.create_md_file()
 ``` a piece of code 
 and this is 
 ```yaml
-
 Animal:
   description: 'An observation of animal conditions at a certain place and time. This data model has been developed for the IoF2020 UC ShareBeef by UCO and SensoWave.'
   properties:
