@@ -1,39 +1,24 @@
 Entidad: keyPerformanceIndicator
 ================================
 **Lista de propiedades**
-`address`: La dirección postal.
-  
-`aggregatedData`:  Entidad(es) y atributo(s) agregado(s) por el KPI.
-  
-`alternateName`: Un nombre alternativo para este artículo
-  
-`area`: A efectos de organización, permite añadir información geográfica textual adicional como distrito, municipio o cualquier otra pista que pueda ayudar a identificar la cobertura del KPI.
-  
-`areaServed`: La zona geográfica donde se presta un servicio o se ofrece un artículo.
-  
-`businessTarget`: A título informativo, el objetivo empresarial con el que se relaciona este KPI.
-  
-`calculatedBy`:  La organización encargada de calcular el KPI.
-  
-`calculationFormula`: A título informativo, la fórmula utilizada para el cálculo del indicador.
-  
-`calculationFrequency`: Con qué frecuencia se calcula el KPI. Valores permitidos: uno de (por hora, diario, semanal, mensual, anual, trimestral, bimensual, quincenal). O cualquier otro valor significativo para la aplicación y que no esté cubierto por la lista anterior.
-  
-`calculationMethod`: El método de cálculo utilizado.
-  
-`calculationPeriod`: El período de tiempo de KPI.
-  
-`category`: Categoría del indicador. Valores permitidos: (cuantitativos, cualitativos, adelantados, atrasados, de entrada, de proceso, de salida, prácticos, direccionales, accionables, financieros). Consulte la Wikipedia para obtener una descripción de cada una de las categorías mencionadas anteriormente. - Cualquier otro valor significativo para la aplicación y que no esté cubierto por la lista anterior.
-  
-`currentStanding`: La posición actual del KPI según su valor kpi. Valores permitidos: uno de (muy bueno, bueno, regular, malo, muy malo)
-  
-`dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.
-  
-`dateCreated`: Sello de tiempo de creación de la entidad. Normalmente será asignado por la plataforma de almacenamiento.
-  
+`address`: La dirección postal.  
+`aggregatedData`:  Entidad(es) y atributo(s) agregado(s) por el KPI.  
+`alternateName`: Un nombre alternativo para este artículo  
+`area`: A efectos de organización, permite añadir información geográfica textual adicional como distrito, municipio o cualquier otra pista que pueda ayudar a identificar la cobertura del KPI.  
+`areaServed`: La zona geográfica donde se presta un servicio o se ofrece un artículo.  
+`businessTarget`: A título informativo, el objetivo empresarial con el que se relaciona este KPI.  
+`calculatedBy`:  La organización encargada de calcular el KPI.  
+`calculationFormula`: A título informativo, la fórmula utilizada para el cálculo del indicador.  
+`calculationFrequency`: Con qué frecuencia se calcula el KPI. Valores permitidos: uno de (por hora, diario, semanal, mensual, anual, trimestral, bimensual, quincenal). O cualquier otro valor significativo para la aplicación y que no esté cubierto por la lista anterior.  
+`calculationMethod`: El método de cálculo utilizado.  
+`calculationPeriod`: El período de tiempo de KPI.  
+`category`: Categoría del indicador. Valores permitidos: (cuantitativos, cualitativos, adelantados, atrasados, de entrada, de proceso, de salida, prácticos, direccionales, accionables, financieros). Consulte la Wikipedia para obtener una descripción de cada una de las categorías mencionadas anteriormente. - Cualquier otro valor significativo para la aplicación y que no esté cubierto por la lista anterior.  
+`currentStanding`: La posición actual del KPI según su valor kpi. Valores permitidos: uno de (muy bueno, bueno, regular, malo, muy malo)  
+`dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  
+`dateCreated`: Sello de tiempo de creación de la entidad. Normalmente será asignado por la plataforma de almacenamiento.  
 `dateExpires`: La fecha en la que el KPI ya no será necesario o significativo.
 
-`dateModified`: Sello de tiempo de la última modificación de la entidad. Esta será normalmente asignada por la plataforma de almacenamiento.
+`dateModified`: Sello de tiempo de la última modificación de la entidad. Normalmente será asignado por la plataforma de almacenamiento.
 
 `dateNextCalculation`: Fecha en la que debería estar disponible un nuevo cálculo del KPI.
 
