@@ -226,6 +226,7 @@ type:
   description: NGSI Entity type
   enum: [Airport]
   type: string
+
 ```
 </details>  
 
