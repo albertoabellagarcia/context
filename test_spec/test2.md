@@ -31,8 +31,334 @@ Required properties
 Sorted alphabetically (click for details)
 <details><summary><strong>full yaml details</strong></summary>  
 ```yaml
-{'id': {'anyOf': [{'type': 'string', 'minLength': 1, 'maxLength': 256, 'pattern': '^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$', 'description': 'Property. Identifier format of any NGSI entity'}, {'type': 'string', 'format': 'uri', 'description': 'Property. Identifier format of any NGSI entity'}]}, 'dateCreated': {'type': 'string', 'format': 'date-time', 'x-ngsi': {'type': 'Property'}, 'description': 'Entity creation timestamp. This will usually be allocated by the storage platform.'}, 'dateModified': {'type': 'string', 'format': 'date-time', 'x-ngsi': {'type': 'Property'}, 'description': 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'}, 'source': {'type': 'string', 'x-ngsi': {'type': 'Property'}, 'description': 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'}, 'name': {'type': 'string', 'x-ngsi': {'type': 'Property'}, 'description': 'The name of this item.'}, 'alternateName': {'type': 'string', 'x-ngsi': {'type': 'Property'}, 'description': 'An alternative name for this item'}, 'description': {'type': 'string', 'x-ngsi': {'type': 'Property'}, 'description': 'A description of this item'}, 'dataProvider': {'type': 'string', 'x-ngsi': {'type': 'Property'}, 'description': 'A sequence of characters identifying the provider of the harmonised data entity.'}, 'owner': {'type': 'array', 'x-ngsi': {'type': 'Property'}, 'description': 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)', 'items': {'anyOf': [{'type': 'string', 'minLength': 1, 'maxLength': 256, 'pattern': '^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$', 'description': 'Property. Identifier format of any NGSI entity'}, {'type': 'string', 'format': 'uri', 'description': 'Property. Identifier format of any NGSI entity'}]}}, 'seeAlso': {'oneOf': [{'type': 'array', 'minItems': 1, 'items': [{'type': 'string', 'format': 'uri'}]}, {'type': 'string', 'format': 'uri'}]}, 'location': {'$schema': 'http://json-schema.org/draft-07/schema#', '$id': 'https://geojson.org/schema/Geometry.json', 'title': 'GeoJSON Geometry', 'oneOf': [{'title': 'GeoJSON Point', 'type': 'object', 'required': ['type', 'coordinates'], 'properties': {'type': {'type': 'string', 'enum': ['Point']}, 'coordinates': {'type': 'array', 'minItems': 2, 'items': {'type': 'number'}}, 'bbox': {'type': 'array', 'minItems': 4, 'items': {'type': 'number'}}}}, {'title': 'GeoJSON LineString', 'type': 'object', 'required': ['type', 'coordinates'], 'properties': {'type': {'type': 'string', 'enum': ['LineString']}, 'coordinates': {'type': 'array', 'minItems': 2, 'items': {'type': 'array', 'minItems': 2, 'items': {'type': 'number'}}}, 'bbox': {'type': 'array', 'minItems': 4, 'items': {'type': 'number'}}}}, {'title': 'GeoJSON Polygon', 'type': 'object', 'required': ['type', 'coordinates'], 'properties': {'type': {'type': 'string', 'enum': ['Polygon']}, 'coordinates': {'type': 'array', 'items': {'type': 'array', 'minItems': 4, 'items': {'type': 'array', 'minItems': 2, 'items': {'type': 'number'}}}}, 'bbox': {'type': 'array', 'minItems': 4, 'items': {'type': 'number'}}}}, {'title': 'GeoJSON MultiPoint', 'type': 'object', 'required': ['type', 'coordinates'], 'properties': {'type': {'type': 'string', 'enum': ['MultiPoint']}, 'coordinates': {'type': 'array', 'items': {'type': 'array', 'minItems': 2, 'items': {'type': 'number'}}}, 'bbox': {'type': 'array', 'minItems': 4, 'items': {'type': 'number'}}}}, {'title': 'GeoJSON MultiLineString', 'type': 'object', 'required': ['type', 'coordinates'], 'properties': {'type': {'type': 'string', 'enum': ['MultiLineString']}, 'coordinates': {'type': 'array', 'items': {'type': 'array', 'minItems': 2, 'items': {'type': 'array', 'minItems': 2, 'items': {'type': 'number'}}}}, 'bbox': {'type': 'array', 'minItems': 4, 'items': {'type': 'number'}}}}, {'title': 'GeoJSON MultiPolygon', 'type': 'object', 'required': ['type', 'coordinates'], 'properties': {'type': {'type': 'string', 'enum': ['MultiPolygon']}, 'coordinates': {'type': 'array', 'items': {'type': 'array', 'items': {'type': 'array', 'minItems': 4, 'items': {'type': 'array', 'minItems': 2, 'items': {'type': 'number'}}}}}, 'bbox': {'type': 'array', 'minItems': 4, 'items': {'type': 'number'}}}}]}, 'address': {'type': 'object', 'x-ngsi': {'type': 'Property'}, 'description': 'The mailing address.', 'properties': {'streetAddress': {'type': 'string'}, 'addressLocality': {'type': 'string'}, 'addressRegion': {'type': 'string'}, 'addressCountry': {'type': 'string'}, 'postalCode': {'type': 'string'}, 'postOfficeBoxNumber': {'type': 'string'}, 'areaServed': {'type': 'string'}}}, 'areaServed': {'type': 'string', 'x-ngsi': {'type': 'Property'}, 'description': 'The geographic area where a service or offered item is provided.'}, 'type': {'type': 'string', 'enum': ['Airport'], 'description': 'NGSI Entity type'}, 'codeIATA': {'type': 'string'}, 'codeICAO': {'type': 'string'}}
+address:
+  description: The mailing address.
+  properties:
+    addressCountry: {type: string}
+    addressLocality: {type: string}
+    addressRegion: {type: string}
+    areaServed: {type: string}
+    postOfficeBoxNumber: {type: string}
+    postalCode: {type: string}
+    streetAddress: {type: string}
+  type: object
+  x-ngsi: {type: Property}
+alternateName:
+  description: An alternative name for this item
+  type: string
+  x-ngsi: {type: Property}
+areaServed:
+  description: The geographic area where a service or offered item is provided.
+  type: string
+  x-ngsi: {type: Property}
+codeIATA: {type: string}
+codeICAO: {type: string}
+dataProvider:
+  description: A sequence of characters identifying the provider of the harmonised
+    data entity.
+  type: string
+  x-ngsi: {type: Property}
+dateCreated:
+  description: Entity creation timestamp. This will usually be allocated by the storage
+    platform.
+  format: date-time
+  type: string
+  x-ngsi: {type: Property}
+dateModified:
+  description: Timestamp of the last modification of the entity. This will usually
+    be allocated by the storage platform.
+  format: date-time
+  type: string
+  x-ngsi: {type: Property}
+description:
+  description: A description of this item
+  type: string
+  x-ngsi: {type: Property}
+id:
+  anyOf: &id001
+  - {description: Property. Identifier format of any NGSI entity, maxLength: 256,
+    minLength: 1, pattern: '^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$', type: string}
+  - {description: Property. Identifier format of any NGSI entity, format: uri, type: string}
+location:
+  $id: https://geojson.org/schema/Geometry.json
+  $schema: http://json-schema.org/draft-07/schema#
+  oneOf:
+  - properties:
+      bbox:
+        items: {type: number}
+        minItems: 4
+        type: array
+      coordinates:
+        items: {type: number}
+        minItems: 2
+        type: array
+      type:
+        enum: [Point]
+        type: string
+    required: [type, coordinates]
+    title: GeoJSON Point
+    type: object
+  - properties:
+      bbox:
+        items: {type: number}
+        minItems: 4
+        type: array
+      coordinates:
+        items:
+          items: {type: number}
+          minItems: 2
+          type: array
+        minItems: 2
+        type: array
+      type:
+        enum: [LineString]
+        type: string
+    required: [type, coordinates]
+    title: GeoJSON LineString
+    type: object
+  - properties:
+      bbox:
+        items: {type: number}
+        minItems: 4
+        type: array
+      coordinates:
+        items:
+          items:
+            items: {type: number}
+            minItems: 2
+            type: array
+          minItems: 4
+          type: array
+        type: array
+      type:
+        enum: [Polygon]
+        type: string
+    required: [type, coordinates]
+    title: GeoJSON Polygon
+    type: object
+  - properties:
+      bbox:
+        items: {type: number}
+        minItems: 4
+        type: array
+      coordinates:
+        items:
+          items: {type: number}
+          minItems: 2
+          type: array
+        type: array
+      type:
+        enum: [MultiPoint]
+        type: string
+    required: [type, coordinates]
+    title: GeoJSON MultiPoint
+    type: object
+  - properties:
+      bbox:
+        items: {type: number}
+        minItems: 4
+        type: array
+      coordinates:
+        items:
+          items:
+            items: {type: number}
+            minItems: 2
+            type: array
+          minItems: 2
+          type: array
+        type: array
+      type:
+        enum: [MultiLineString]
+        type: string
+    required: [type, coordinates]
+    title: GeoJSON MultiLineString
+    type: object
+  - properties:
+      bbox:
+        items: {type: number}
+        minItems: 4
+        type: array
+      coordinates:
+        items:
+          items:
+            items:
+              items: {type: number}
+              minItems: 2
+              type: array
+            minItems: 4
+            type: array
+          type: array
+        type: array
+      type:
+        enum: [MultiPolygon]
+        type: string
+    required: [type, coordinates]
+    title: GeoJSON MultiPolygon
+    type: object
+  title: GeoJSON Geometry
+name:
+  description: The name of this item.
+  type: string
+  x-ngsi: {type: Property}
+owner:
+  description: A List containing a JSON encoded sequence of characters referencing
+    the unique Ids of the owner(s)
+  items: !!python/object/new:builtins.dict
+    dictitems:
+      anyOf: *id001
+  type: array
+  x-ngsi: {type: Property}
+seeAlso:
+  oneOf:
+  - items:
+    - {format: uri, type: string}
+    minItems: 1
+    type: array
+  - {format: uri, type: string}
+source:
+  description: A sequence of characters giving the original source of the entity data
+    as a URL. Recommended to be the fully qualified domain name of the source provider,
+    or the URL to the source object.
+  type: string
+  x-ngsi: {type: Property}
+type:
+  description: NGSI Entity type
+  enum: [Airport]
+  type: string
+
 ```
 </details>  
 
 ## Example payloads  
+
+#### Airport NGSI V2 key-values Example  
+
+Here is an example of a Airport in JSON format as key-values. This is compatible with NGSI V2 when  using `options=keyValues` and returns the context data of an individual entity.
+
+```json
+{
+    "id": "airport-BMA",
+    "type": "Airport",
+    "codeIATA": "BMA",
+    "codeICAO": "ESSB",
+    "name": "Bromma Stockholm Airport",
+    "alternateName": "Stockholm Airport",
+    "address": {
+        "addressCountry": "SE",
+        "addressLocality": "Stockholm"
+    },
+    "location": {
+        "type": "Point",
+        "coordinates": [59.354444, 17.939722, 14]
+    }
+}
+```
+
+#### Airport NGSI V2 normalized Example  
+
+Here is an example of a Airport in JSON format as normalized. This is compatible with NGSI V2 when not using options and returns the context data of an individual entity.
+
+```json
+{
+    "id": "airport-BMA",
+    "type": "Airport",
+    "codeIATA": {
+        "value": "BMA"
+    },
+    "codeICAO": {
+        "value": "ESSB"
+    },
+    "name": {
+        "value": "Bromma Stockholm Airport"
+    },
+    "alternateName": {
+        "value": "Stockholm Airport"
+    },
+    "address": {
+        "type": "PostalAddress",
+        "value": {
+            "addressCountry": "SE",
+            "addressLocality": "Stockholm"
+        }
+    },
+    "location": {
+        "type": "geo:json",
+        "value": {
+            "type": "Point",
+            "coordinates": [59.354444, 17.939722, 14]
+        }
+    }
+}
+```
+
+#### Airport NGSI-LD key-values Example  
+
+Here is an example of a Airport in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.
+
+```json
+{
+    "id": "urn:ngsi-ld:Airline:airport-BMA",
+    "type": "Airport",
+    "codeIATA": "BMA",
+    "codeICAO": "ESSB",
+    "name": "Bromma Stockholm Airport",
+    "alternateName": "Stockholm Airport",
+    "address": {
+        "addressCountry": "SE",
+        "addressLocality": "Stockholm" 
+    },
+    "location": {
+        "type": "Point",
+        "coordinates": [59.354444, 17.939722, 14]
+    },
+    "@context": [
+        "https://schema.lab.fiware.org/ld/context",
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+    ]
+}
+```
+
+#### Airport NGSI-LD normalized Example  
+
+Here is an example of a Airport in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.
+
+```json
+{
+    "id": "urn:ngsi-ld:Airline:airport-BMA",
+    "type": "Airport",
+    "codeIATA": {
+        "type": "Property",
+        "value": "BMA"
+    },
+    "codeICAO": {
+        "type": "Property",
+        "value": "ESSB"
+    },
+    "name": {
+        "type": "Property",
+        "value": "Bromma Stockholm Airport"
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Stockholm Airport"
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "addressCountry": "SE",
+            "addressLocality": "Stockholm"
+        }
+    },
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Point",
+            "coordinates": [59.354444, 17.939722, 14]
+        }
+    },
+    "@context": [
+        "https://schema.lab.fiware.org/ld/context",
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+    ]
+}
+```
