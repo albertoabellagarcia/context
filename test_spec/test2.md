@@ -31,7 +31,7 @@ Required properties
 Sorted alphabetically (click for details)
 <details><summary><strong>full yaml details</strong></summary>  
 
-``````yaml
+```yaml
 address:
   description: The mailing address.
   properties:
