@@ -1,31 +1,30 @@
 {
   "$schema": "http://json-schema.org/schema#",
   "$schemaVersion": "0.0",
-  "$id": "https://raw.githubusercontent.com/albertoabellagarcia/context/test_branch/device/schema.jsonld",
+  "$id": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/schema.jsonld",
   "title": " - Device schema",
   "description": "An apparatus (hardware + software + firmware) intended to accomplish a particular task (sensing the environment, actuating, etc.).",
   "type": "object",
   "allOf": [
     {
-      "$ref": "https://raw.githubusercontent.com/albertoabellagarcia/context/test_branch/common-schema.json#/definitions/Location-Commons"
-    },
-    {
       "$ref": "https://smart-data-models.github.io/dataModel.Device/device-schema.json#/definitions/Device-Commons"
     },
     {
-      "properties":
-      {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
         "type": {
           "type": "string",
-          "enum": ["Device"],
+          "enum": [
+            "Device"
+          ],
           "description": "NGSI Entity type"
         },
-        "controlledAsset":
-        {
+        "controlledAsset": {
           "type": "array",
-          "items":
-          {
-            "$ref": "https://raw.githubusercontent.com/albertoabellagarcia/context/test_branch/common-schema.json#/definitions/EntityIdentifierType"
+          "items": {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
           }
         },
         "mnc": {
@@ -80,7 +79,7 @@
           "type": "string"
         },
         "refDeviceModel": {
-          "$ref": "https://raw.githubusercontent.com/albertoabellagarcia/context/test_branch/common-schema.json#/definitions/EntityIdentifierType"
+          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
         },
         "batteryLevel": {
           "oneOf": [
@@ -121,5 +120,10 @@
       }
     }
   ],
-  "required": ["@id", "@type", "category", "controlledProperty"]
+  "required": [
+    "@id",
+    "@type",
+    "category",
+    "controlledProperty"
+  ]
 }

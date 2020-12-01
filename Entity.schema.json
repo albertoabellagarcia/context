@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "Entity.schema.json",
+  "title": "Entity",
+  "definitions": {
+    "Entity": {
+      "$id": "#Entity",
+      "type": "object",
+      "description": "Base entity schema for use in TMForum Open-APIs",
+      "properties": {
+      },
+      "allOf": [
+        {
+          "$ref": "Addressable.schema.json#Addressable"
+        },
+        {
+          "$ref": "Extensible.schema.json#Extensible"
+        }
+      ]
+    }
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "@context " : "https://raw.githubusercontent.com/albertoabellagarcia/context/master/context.jsonld",
+  "@context " : "https://github.com/albertoabellagarcia/context/blob/test_branch/context.jsonld",
   "@id": "urn:ngsi-ld:Device:device-9845A",
   "@type": "device",
 
@@ -32,21 +32,8 @@
     "type": "Point",
     "coordinates": [-4.754444444, 41.640833333]
   },
-  "address" : {
+  "address": {
     "streetAddress": "1300 New york Avenue",
-    "addressLocality" : "",
-    "addressRegion": "",
-    "addressCountry":  "",
-    "postalCode": "",
-    "postOfficeBoxNumber": "",
-    "areaServed": "Surroundings of IADB"
-  },
-  "Address": {
-    "city": "Washington",
-    "country": "United States",
-    "locality": "Washington",
-    "postcode": "20577",
-    "stateOrProvince": "District of Columbia",
     "streetName": "New York",
     "streetNr": "1300",
     "streetNrLast": "",
@@ -54,6 +41,13 @@
     "streetNrSuffix": "",
     "streetSuffix": "",
     "streetType": "Avenue",
+    "city": "Washington",
+    "country": "United States",
+    "locality": "Washington",
+    "stateOrProvince": "District of Columbia",
+    "postalCode": "20577",
+    "postOfficeBoxNumber": "",
+    "areaServed": "Surroundings of IADB",
     "subAddress": {
       "buildingName": "IADB Building",
       "id": "",

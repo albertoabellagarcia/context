@@ -9,7 +9,8 @@
       {
         "type": {
           "type": "string",
-          "enum": ["coronaPatient"]
+          "enum": ["coronaPatient"],
+          "description": "type class of the object"
         },
         "personId" : {
           "type": "string"

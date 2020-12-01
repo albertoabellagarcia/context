@@ -1,0 +1,85 @@
+{
+    "@context ": "https://github.com/albertoabellagarcia/context/blob/test_branch/context.jsonld",
+    "@id": "urn:ngsi-ld:Device:device-9845A",
+    "@type": "device",
+    "@schemaLocation": "../Device.json",
+    "@baseType": "Device",
+    "href": "../device/42",
+    "id": "42",
+    "controlledAsset": ["urn:ngsi-ld:wastecontainer-IADB"],
+    "mnc": "07",
+    "ipAddress": [
+        "192.14.56.78",
+        "192.14.56.254"
+    ],
+    "dateInstalled": "2014-09-11T10:30:23Z",
+    "dateFirstUsed": "2014-09-11T11:00:00Z",
+    "dateManufactured": "2014-08-11T11:00:00Z",
+    "hardwareVersion": "3.2.12",
+    "softwareVersion": "1.0.0",
+    "firmwareVersion": "2020a134",
+    "osVersion": "20.04",
+    "dateLastCalibration": "2020-04-21T11:00:00Z",
+    "serialNumber": "9845A",
+    "provider": "TMForum",
+    "refDeviceModel": "urn:ngsi-ld:Device:devicemodel-9845A",
+    "batteryLevel": 0.75,
+    "rssi": 0.86,
+    "deviceState": "ok",
+    "dateLastValueReported": "2020-05-01T11:00:00Z",
+    "value": "l=0.22;t=21.2",
+    "category": ["sensor"],
+    "controlledProperty": [
+        "fillingLevel",
+        "temperature"
+    ],
+    "supportedProtocol": [
+        "bluetooth",
+        "gprs"
+    ],
+    "macAddress": [
+        "12:42:62:13:a4:b8",
+        "14:22:62:b8:4a:12"
+    ],
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -4.754444444,
+            41.640833333
+        ]
+    },
+    "address": {
+        "@schemaLocation": "../Address.json",
+        "@baseType": "Address",
+        "@type": "Address",
+        "href": "../address/42",
+        "id": "42",
+        "streetAddress": "1300 New york Avenue",
+        "streetName": "New York",
+        "streetNr": "1300",
+        "streetNrLast": "",
+        "streetNrLastSuffix": "",
+        "streetNrSuffix": "",
+        "streetSuffix": "",
+        "streetType": "Avenue",
+        "city": "Washington",
+        "country": "United States",
+        "locality": "Washington",
+        "stateOrProvince": "District of Columbia",
+        "postalCode": "20577",
+        "postOfficeBoxNumber": "",
+        "areaServed": "Surroundings of IADB",
+        "subAddress": {
+            "buildingName": "IADB Building",
+            "href": "../subAddress/42",
+            "id": "42",
+            "levelNumber": "4",
+            "levelType": "Regular floor",
+            "name": "Office 432",
+            "privateStreetName": "",
+            "privateStreetNumber": "",
+            "subUnitNumber": "32",
+            "subAddressType": "Office"
+        }
+    }
+}

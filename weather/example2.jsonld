@@ -1,0 +1,73 @@
+{
+  "@context ": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/context.jsonld",
+  "@id": "urn:ngsi-ld:WeatherForecast:TMForumEurope-20200506",
+  "@type": "WeatherForecast",
+  "dateRetrieved": "2020-04-21T11:00:00Z",
+  "dateIssued": "2020-04-21T11:00:00Z",
+  "validity": "2007-03-01T13:00:00Z/2008-05-11T15:30:00Z",
+  "validFrom": "2007-03-01T13:00:00Z",
+  "validTo": "2008-05-11T15:30:00Z",
+  "dayMaximum": {
+    "temperature": 25,
+    "feelLikesTemperature": 22,
+    "relativeHumidity": 0.8
+  },
+  "dayMinimum": {
+    "temperature": 12,
+    "feelLikesTemperature": 10,
+    "relativeHumidity": 0.6
+  },
+  "uVIndexMax": 3,
+  "precipitationProbability": 0.9,
+  "weatherType": "cloudy",
+  "visibility": "good",
+  "windDirection": 123,
+  "windSpeed": 20,
+  "refPointOfInterest": "TMForum-Headquarters",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      51.5187817,
+      -0.112338
+    ]
+  },
+  "address": {
+    "streetAddress": "3 Waterhouse Square",
+    "streetName": "Waterhouse",
+    "streetNr": "3",
+    "streetNrLast": "",
+    "streetNrLastSuffix": "",
+    "streetNrSuffix": "",
+    "streetSuffix": "",
+    "streetType": "Square",
+    "city": "London",
+    "country": "United Kingdom",
+    "locality": "Holborn",
+    "stateOrProvince": "London",
+    "postalCode": "EC1N 2SW",
+    "postOfficeBoxNumber": "",
+    "areaServed": "TMForum-Headquarters surroundings",
+    "subAddress": {
+      "buildingName": "TMForum Building",
+      "id": "",
+      "levelNumber": "4",
+      "levelType": "Regular floor",
+      "name": "Office 432",
+      "privateStreetName": "",
+      "privateStreetNumber": "",
+      "subUnitNumber": "32",
+      "SubAddressType": "Office",
+      "postOfficeBoxNumber": "",
+      "Entity": {
+        "@schemaLocation": "https://github.com/MEF-GIT/MEF-LSO-Sonata-SDK/blob/master/experimental/api/ProductSpecDescription/Ordering/UNISpec.json",
+        "@baseType": "product",
+        "@type": "UNISPec"
+      }
+    },
+    "Entity": {
+      "@schemaLocation": "https://github.com/MEF-GIT/MEF-LSO-Sonata-SDK/blob/master/experimental/api/ProductSpecDescription/Ordering/UNISpec.json",
+      "@baseType": "product",
+      "@type": "UNISPec"
+    }
+  }
+}

@@ -1,19 +1,16 @@
 {
   "$schema": "http://json-schema.org/schema#",
   "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModel.Weather/WeatherForecast/schema.json",
-  "title": " - Weather Forecast schema",
+  "$id": "https://raw.githubusercontent.com/albertoabellagarcia/context/test_branch/weather/schema.jsonld",
+  "title": " Weather Forecast schema",
   "description": "A harmonised description of a Weather Forecast",
   "type": "object",
   "allOf": [
     {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+      "$ref": "https://raw.githubusercontent.com/albertoabellagarcia/context/test_branch/common-schema.json#/definitions/Location-Commons"
     },
     {
       "$ref": "https://smart-data-models.github.io/dataModel.Weather/weather-schema.json#/definitions/Weather-Commons"
-    },
-    {
-      "$ref": "https://raw.githubusercontent.com/tmforum-rand/schemas/master/Common/Address.schema.json#/definitions/Address"
     },
     {
       "properties": {
@@ -66,9 +63,9 @@
           "type": "number",
           "minimum": 0,
           "maximum": 1
-        },
+        }
       }
     }
   ],
-  "required": ["id", "type", "dateIssued", "address"]
+  "required": ["@id", "@type", "dateIssued", "address"]
 }

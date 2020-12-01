@@ -3,6 +3,9 @@
   "$id": "https://raw.githubusercontent.com/albertoabellagarcia/context/master/terms.jsonld",
   "title": "Terms included into the Smart Data Models",
   "definitions": {
+    "addressLocality": "Locality of a postal addresses",
+    "addressRegion": "Region of a postal addresses",
+    "addressCountry": "Country of a postal addresses",
     "areaServed": "Name for the area affected by an element and address in a location",
     "batteryLevel": "Level of charge of the electrical storage facility",
     "controlledAsset": "Element to be controlled by a device",
@@ -20,6 +23,7 @@
     "firmwareVersion": "Firmware version of the device",
     "hardwareVersion": "Hardware version of the device",
     "osVersion":  "operative system version of the device",
+    "postalCode": "Zip code of a postal address",
     "postOfficeBoxNumber":  "Number in post Box Office",
     "precipitationProbability": "Likelihood of rain in a period",
     "refDeviceModel": "Link to the device model object",
