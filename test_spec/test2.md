@@ -30,7 +30,8 @@ Required properties
 
 Sorted alphabetically (click for details)
 <details><summary><strong>full yaml details</strong></summary>  
-```yaml
+
+``````yaml
 address:
   description: The mailing address.
   properties:
@@ -225,8 +226,8 @@ type:
   description: NGSI Entity type
   enum: [Airport]
   type: string
-```
 
+```
 </details>  
 
 ## Example payloads  
